@@ -1,0 +1,12 @@
+$!{name} hat eine Reservierungsanfrage gestellt:
+
+Name:        $!{name}
+Strasse:     $!{street}
+PLZ/Stadt    $!{zip} $!{city}
+E-Mail:      $!{from}
+Wohnung:     $!{appartment}
+Erwachsene:  $!{amountAdults}
+Kinder:      $!{amountChildren}
+von:         $!{start}
+bis:         $!{end}
+Bemerkung:   $!{comment}
