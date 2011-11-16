@@ -1,146 +1,124 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<title>&Ouml;kohof Familie Barthel | Anfahrt</title>
-<meta http-equiv="keywords"
-    content="oeko,ferien,urlaub,bauernhof,natur,kinder,familie,demeter,linden,windelsbach,rothenburg,tauber" />
-<meta http-equiv="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Windelsbach" />
-<link rel="stylesheet" type="text/css" href="css/oekohof.css" />
-<script type="text/javascript" src="script/oekohof.js"></script>
-<script type="text/javascript"
-    src="http://www.google.com/jsapi?key=ABQIAAAA2Teg6H0idDXh5svr7mi61hT8lVL1QzVBsjHuit_t2sWnS8e9FhT819Qeblv1x46gM9RlF2bwyyQxBw&hl=de"></script>
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
-<script type="text/javascript">
-        // Google Analytics
-        _uacct = "UA-383464-1";
-        urchinTracker();
-        
-        function findRoute()
-        {
-            var street = document.mapform.street.value;
-            var zip = document.mapform.zip.value;
-            var city = document.mapform.city.value;
-            
-            if (street == "Straße") street = "";
-            if (zip    == "PLZ")    zip    = "";
-            if (city   == "Ort")    city   = "";
-            
-            if (street == "" && zip == "" && city == "")
-            {
-                alert("Bitte geben Sie eine gültige Adresse ein.");
-            }
-            else
-            {
-				var from = "?";
-				if (street != "")
-				{
-					from += street + ", ";
-				}
-				if (zip != "")
-				{
-					from += zip + " ";
-				}
-				if (city != "")
-				{
-					from += city;
-				}
-                window.open("route.html" + from, "route", "width=900,height=700,location=no,menubar=no,resizable=no,toolbar=no,status=no");
-            }
-        }
-    </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>&Ouml;kohof Familie Barthel | Anfahrt</title>
+  <meta http-equiv="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Windelsbach"/>
+  <meta name="author" content="Harald Pehl">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
-
 <body>
-    <div id="header" style="height: 130px;">
-        <img src="bilder/header_anfahrt.jpg" width="760" height="130" title="" alt="" />
+  <header>
+    <div id="header">
+      <img src="img/header_anfahrt.jpg" width="760" height="130" title="" alt="" />
     </div>
-    <div id="content">
-        <table>
-            <tr>
-                <td id="contentCell">
-                    <h2>Wie kommen wir hin?</h2>
-                    <p>
-                        Auf der rechten Seite sehen Sie die Lage des <a target="external"
-                            href="http://www.naturpark-frankenhoehe.de/">Naturparks Frankenh&ouml;he</a>. Die Karte
-                        darunter zeigt die Umgebung um Linden in einem kleineren Ausschnitt.
-                    </p>
-                    <p>Mit dem folgenden Formular k&ouml;nnen Sie mit Hilfe von Google Maps die Anfahrt zum
-                        &Ouml;kohof Barthel berechnen lassen:</p>
+  </header>
 
-                    <form onsubmit="return false;" name="mapform">
-                        <table style="width: 250px;">
-                            <tr>
-                                <td colspan="2"><h3>Start</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="full" colspan="2"><input type="text" name="street" value="Stra�e"
-                                    onfocus="if (document.mapform.street.value == 'Stra�e') document.mapform.street.value = '';" /><br />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding-right: 20px; width: 60px;"><input type="text" name="zip"
-                                    value="PLZ" style="width: 60px;"
-                                    onfocus="if (document.mapform.zip.value == 'PLZ') document.mapform.zip.value = '';" />
-                                </td>
-                                <td class="full"><input type="text" name="city" value="Ort"
-                                    onfocus="if (document.mapform.city.value == 'Ort') document.mapform.city.value = '';" />
-                                </td>
-                            </tr>
+  <div role="main">
+    <h2>Wie kommen wir hin?</h2>
+    <p>
+      Auf der rechten Seite sehen Sie die Lage des <a target="external" href="http://www.naturpark-frankenhoehe.de/">Naturparks
+        Frankenh&ouml;he</a>. Die Karte darunter zeigt die Umgebung um Linden in einem kleineren Ausschnitt.
+    </p>
+    <p>Mit dem folgenden Formular k&ouml;nnen Sie mit Hilfe von Google Maps die Anfahrt zum &Ouml;kohof Barthel
+      berechnen lassen:</p>
 
-                            <tr>
-                                <td colspan="2" style="padding-top: 1em;"><h3>Ziel</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">�kohof Barthel<br /> Linden 27<br /> 91635 Windelsbach
-                                    (Deutschland)</td>
-                            </tr>
+    <form onsubmit="return false;" name="mapform">
+      <table style="width: 250px;">
+        <tr>
+          <td colspan="2"><h3>Start</h3></td>
+        </tr>
+        <tr>
+          <td class="full" colspan="2"><input type="text" name="street" value="Straße"
+            onfocus="if (document.mapform.street.value == 'Straße') document.mapform.street.value = '';" /><br /></td>
+        </tr>
+        <tr>
+          <td style="padding-right: 20px; width: 60px;"><input type="text" name="zip" value="PLZ"
+            style="width: 60px;" onfocus="if (document.mapform.zip.value == 'PLZ') document.mapform.zip.value = '';" />
+          </td>
+          <td class="full"><input type="text" name="city" value="Ort"
+            onfocus="if (document.mapform.city.value == 'Ort') document.mapform.city.value = '';" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="padding-top: 1em;"><h3>Ziel</h3></td>
+        </tr>
+        <tr>
+          <td colspan="2">Ökohof Barthel<br /> Linden 27<br /> 91635 Windelsbach (Deutschland)</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="padding-top: 1em;">
+            <button type="submit" onclick="findRoute();">Route berechnen</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
 
-                            <tr>
-                                <td colspan="2" style="padding-top: 1em;">
-                                    <button type="submit" onclick="findRoute();">Route berechnen</button></td>
-                            </tr>
-                        </table>
-                    </form></td>
-                <td id="infoCell" style="width: 330px;">
-                    <table>
-                        <tr>
-                            <td><img src="bilder/karte.gif" width="330" height="450"
-                                alt="Naturpark Frankenh&ouml;he" title="Naturpark Frankenh&ouml;he" border="0" /></td>
-                        </tr>
-                        <tr>
-                            <td style="padding-top: 25px;"><iframe width="330" height="350" frameborder="0"
-                                    scrolling="no" marginheight="0" marginwidth="0"
-                                    src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Linden+27,+91635+Windelsbach&amp;sll=48.123639,11.589345&amp;sspn=0.007763,0.01929&amp;ie=UTF8&amp;hq=&amp;hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&amp;ll=49.414547,10.239944&amp;spn=0.156352,0.226593&amp;z=11&amp;output=embed"></iframe><br />
-                            <small><a
-                                    href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=de&amp;geocode=&amp;q=Linden+27,+91635+Windelsbach&amp;sll=48.123639,11.589345&amp;sspn=0.007763,0.01929&amp;ie=UTF8&amp;hq=&amp;hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&amp;ll=49.414547,10.239944&amp;spn=0.156352,0.226593&amp;z=11"
-                                    style="color: #0000FF; text-align: left">Gr��ere Kartenansicht</a>
-                            </small></td>
-                        </tr>
-                    </table></td>
-            </tr>
-        </table>
+  <aside>
+    <div id="aside">
+      <table>
+        <tr>
+          <td><img src="img/karte.gif" width="330" height="450" alt="Naturpark Frankenh&ouml;he"
+            title="Naturpark Frankenh&ouml;he" border="0" />
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top: 25px;"><iframe width="330" height="350" frameborder="0" scrolling="no"
+              marginheight="0" marginwidth="0"
+              src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Linden+27,+91635+Windelsbach&amp;sll=48.123639,11.589345&amp;sspn=0.007763,0.01929&amp;ie=UTF8&amp;hq=&amp;hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&amp;ll=49.414547,10.239944&amp;spn=0.156352,0.226593&amp;z=11&amp;output=embed"></iframe><br />
+            <small><a
+              href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=de&amp;geocode=&amp;q=Linden+27,+91635+Windelsbach&amp;sll=48.123639,11.589345&amp;sspn=0.007763,0.01929&amp;ie=UTF8&amp;hq=&amp;hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&amp;ll=49.414547,10.239944&amp;spn=0.156352,0.226593&amp;z=11"
+              style="color: #0000FF; text-align: left">Größere Kartenansicht</a> </small>
+          </td>
+        </tr>
+      </table>
     </div>
+  </aside>
 
-
+  <footer>
     <ul id="navigation">
-        <li><a href="index.html">&ouml;kohof</a>
-        </li>
-        <li><a href="zimmer.html">zimmer</a>
-        </li>
-        <li><a href="galerie.html">galerie</a>
-        </li>
-        <li><a href="freizeit.html">freizeit</a>
-        </li>
-        <li><a href="demeter.html">demeter</a>
-        </li>
-        <li id="selected">anfahrt</li>
-        <li><a href="kontakt.html">kontakt</a>
-        </li>
-        <li><a href="impressum.html">impressum</a>
-        </li>
+      <li><a href="index.html">&ouml;kohof</a>
+      </li>
+      <li><a href="wohnungen.html">wohnungen</a>
+      </li>
+      <li><a href="galerie.html">galerie</a>
+      </li>
+      <li><a href="freizeit.html">freizeit</a>
+      </li>
+      <li><a href="demeter.html">demeter</a>
+      </li>
+      <li id="selected">anfahrt</li>
+      <li><a href="kontakt.html">kontakt</a>
+      </li>
+      <li><a href="impressum.html">impressum</a>
+      </li>
     </ul>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.0.min.js"><\/script>')</script>
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <script>
+    var _gaq=[['_setAccount','UA-383464-1'],['_trackPageview'],['_trackPageLoadTime']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  <!--[if lt IE 7 ]>
+    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
 </body>
 </html>
