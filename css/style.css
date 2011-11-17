@@ -207,39 +207,34 @@ td { vertical-align: top; }
    ========================================================================== */
 
 div#container {
-  width: 800px;
+  width: 760px;
   margin: 0 auto;
 }
 
 div#header {
-	margin: 10px 10px 0 10px;
+	margin-top: 10px;
 }
 
 div#content {
-  margin: 0 10px 0 10px;
   color: white;
   background-color: #f93;
-  width: 600px;
+  width: 560px;
   min-height: 600px;
-  height: expression(this.scrollHeight > 600 ? "auto":"600px");
+  height: expression(this.scrollHeight > 600 ? "auto" : "600px");
 }
 
 div#content.fullwidth {
-  width: 800px;
+  width: 760px;
 }
 
 div#content h1 {
     font-size: 14pt;
 }
 
-div#content h1,div#content p {
+div#content h1, div#content p {
 	margin:0;
 	padding: 10px;
 }
-
-div#content h1, div#content p, div#content li {
-	color: white;
-} 
 
 div#aside {
   color: white;
