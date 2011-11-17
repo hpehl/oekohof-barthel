@@ -206,13 +206,25 @@ td { vertical-align: top; }
    Author:
    ========================================================================== */
 
+div#container {
+  width: 800px;
+  margin: 0 auto;
+}
+
 div#header {
-	margin: 20px 20px 0 20px;
+	margin: 10px 10px 0 10px;
 }
 
 div#content {
-	margin: 0 20px 0 20px;
-    background-color: #f93;
+	margin: 0 10px 0 10px;
+  background-color: #f93;
+  width: 600px;
+  min-height: 600px;
+  height: expression(this.scrollHeight > 600 ? "auto":"600px");
+}
+
+div#content.fullwidth {
+  width: 800px;
 }
 
 div#content h1 {
@@ -228,6 +240,14 @@ div#content h1, div#content p, div#content li {
 	color: white;
 } 
 
+div#aside {
+  float: right;
+  width: 200px;
+}
+
+div#navigation {
+  clear: right; 
+}
 
 /* ==|== media queries ======================================================
    PLACEHOLDER Media Queries for Responsive Design.
