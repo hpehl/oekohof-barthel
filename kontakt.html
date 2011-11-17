@@ -25,136 +25,112 @@
     </div>
   </header>
 
-  <div role="main">
+  <div id="content" role="main">
     <form action="http://onlyfree.de/php/formmaker/formmail2.php" method="post" name="phpform"
       onsubmit="return checkRequired();">
       <input type="hidden" name="redirect" value="http://www.oekohof-barthel.de/kontakt_ok.html" /> <input
         type="hidden" name="subject" value="Reservierungsanfrage" /> <input type="hidden" name="admin"
         value="barthel.linden@t-online.de" />
-      <table>
+      <table style="width: 500px;">
         <tr>
-          <td id="contentCell">
-            <table style="width: 500px;">
-              <tr>
-                <td colspan="3" style="padding-bottom: 1em;">
-                  <h2>An wen k&ouml;nnen wir uns wenden?</h2>
-                  <p>Hier k&ouml;nnen Sie Kontakt mit uns aufnehmen, falls Sie eine Wohnung auf unserem &Ouml;kohof
-                    reservieren wollen oder uns sonst eine Nachricht senden wollen.</p>
+          <td colspan="3" style="padding-bottom: 1em;">
+            <h1>An wen k&ouml;nnen wir uns wenden?</h1>
+            <p>Hier k&ouml;nnen Sie Kontakt mit uns aufnehmen, falls Sie eine Wohnung auf unserem &Ouml;kohof
+              reservieren wollen oder uns sonst eine Nachricht senden wollen.</p>
 
-                  <p>Wir werden uns umgehend bei Ihnen melden, ob die Wohnung in dem von Ihnen angegebenen Zeitraum
-                    noch verf&uuml;gbar ist.</p></td>
-              </tr>
+            <p>Wir werden uns umgehend bei Ihnen melden, ob die Wohnung in dem von Ihnen angegebenen Zeitraum noch
+              verf&uuml;gbar ist.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="label"><label for="Name">Name</label></td>
+          <td class="input" colspan="2"><input type="text" id="Name" name="Name" /></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="Strasse">Strasse</label></td>
+          <td class="input" colspan="2"><input type="text" id="Strasse" name="Strasse" /></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="PLZ">PLZ / Stadt</label></td>
+          <td style="padding-right: 20px; width: 55px;"><input type="text" id="PLZ" name="PLZ" style="width: 55px;" />
+          </td>
+          <td class="input"><input type="text" name="Stadt" /></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="email">E-Mail</label></td>
+          <td class="input" colspan="2"><input type="text" id="email" name="email" /></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="Wohnung_1">Wohnung</label></td>
+          <td class="input" colspan="5"><label for="Wohnung_1">I</label><input type="radio" class="radio"
+            id="Wohnung_1" name="Wohnung" value="Wohung I" />&nbsp;&nbsp;&nbsp;&nbsp; <label for="Wohnung_2">II</label><input
+            type="radio" class="radio" id="Wohnung_2" name="Wohnung" value="Wohung II" />&nbsp;&nbsp;&nbsp;&nbsp; <label
+            for="Wohnung_3">III</label><input type="radio" class="radio" id="Wohnung_3" name="Wohnung"
+            value="Wohung III" />&nbsp;&nbsp;&nbsp;&nbsp; <label for="keine_Angabe">keine Angabe</label><input
+            type="radio" class="radio" id="keine_Angabe" name="Wohnung" value="keine Angabe" checked="checked" /></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="Anzahl_Erwachsene">f&uuml;r</label></td>
+          <td class="input" colspan="2">
+            <table cellpadding="0" cellspacing="0" style="width: 99%;">
               <tr>
-                <td class="label"><label for="Name">Name</label>
+                <td style="padding-right: 2px; width: 28%;"><input type="text" id="Anzahl_Erwachsene"
+                  name="Anzahl_Erwachsene" /></td>
+                <td style="padding: 0px 2px; width: 30%; text-align: center"><label for="Anzahl_Kinder">Erwachsene
+                    und</label></td>
+                <td style="padding: 0px 2px; width: 28%"><input type="text" id="Anzahl_Kinder" name="Anzahl_Kinder" />
                 </td>
-                <td class="input" colspan="2"><input type="text" id="Name" name="Name" />
-                </td>
+                <td style="width: 12%; text-align: right;">Kinder</td>
               </tr>
-              <tr>
-                <td class="label"><label for="Strasse">Strasse</label>
-                </td>
-                <td class="input" colspan="2"><input type="text" id="Strasse" name="Strasse" />
-                </td>
-              </tr>
-              <tr>
-                <td class="label"><label for="PLZ">PLZ / Stadt</label>
-                </td>
-                <td style="padding-right: 20px; width: 55px;"><input type="text" id="PLZ" name="PLZ"
-                  style="width: 55px;" />
-                </td>
-                <td class="input"><input type="text" name="Stadt" />
-                </td>
-              </tr>
-              <tr>
-                <td class="label"><label for="email">E-Mail</label>
-                </td>
-                <td class="input" colspan="2"><input type="text" id="email" name="email" />
-                </td>
-              </tr>
-              <tr>
-                <td class="label"><label for="Wohnung_1">Wohnung</label>
-                </td>
-                <td class="input" colspan="5"><label for="Wohnung_1">I</label><input type="radio" class="radio"
-                  id="Wohnung_1" name="Wohnung" value="Wohung I" />&nbsp;&nbsp;&nbsp;&nbsp; <label for="Wohnung_2">II</label><input
-                  type="radio" class="radio" id="Wohnung_2" name="Wohnung" value="Wohung II" />&nbsp;&nbsp;&nbsp;&nbsp;
-                  <label for="Wohnung_3">III</label><input type="radio" class="radio" id="Wohnung_3" name="Wohnung"
-                  value="Wohung III" />&nbsp;&nbsp;&nbsp;&nbsp; <label for="keine_Angabe">keine Angabe</label><input
-                  type="radio" class="radio" id="keine_Angabe" name="Wohnung" value="keine Angabe" checked="checked" />
-                </td>
-              </tr>
-              <tr>
-                <td class="label"><label for="Anzahl_Erwachsene">f&uuml;r</label>
-                </td>
-                <td class="input" colspan="2">
-                  <table cellpadding="0" cellspacing="0" style="width: 99%;">
-                    <tr>
-                      <td style="padding-right: 2px; width: 28%;"><input type="text" id="Anzahl_Erwachsene"
-                        name="Anzahl_Erwachsene" />
-                      </td>
-                      <td style="padding: 0px 2px; width: 30%; text-align: center"><label for="Anzahl_Kinder">Erwachsene
-                          und</label>
-                      </td>
-                      <td style="padding: 0px 2px; width: 28%"><input type="text" id="Anzahl_Kinder"
-                        name="Anzahl_Kinder" />
-                      </td>
-                      <td style="width: 12%; text-align: right;">Kinder</td>
-                    </tr>
-                  </table></td>
-              </tr>
-              <tr>
-                <td class="label"><label for="von">von</label>
-                </td>
-                <td class="input" colspan="2"><input type="text" id="von" name="von" />
-                </td>
-              </tr>
-              <tr>
-                <td class="label"><label for="bis">bis</label>
-                </td>
-                <td class="input" colspan="2"><input type="text" id="bis" name="bis" />
-                </td>
-              </tr>
-              <tr>
-                <td class="label"><label for="Bemerkung">Bemerkung</label>
-                </td>
-                <td class="input" colspan="2"><textarea id="Bemerkung" name="Bemerkung" rows="5"></textarea>
-                </td>
-              </tr>
-              <tr>
-                <td class="label">&nbsp;</td>
-                <td colspan="2" style="padding-top: 1em;">
-                  <button type="submit">Anfrage abschicken</button></td>
-              </tr>
-            </table></td>
-          <td id="infoCell" style="padding-top: 4px; width: 200px;">
-            <p>Nat&uuml;rlich k&ouml;nnen Sie uns auch ganz normal per Telefon und Post erreichen.</p>
-
-            <p>
-              Hier unsere Adresse:<br /> Fam. Barthel<br /> Linden 27<br /> 91635 Windelsbach<br /> Tel: 09861-6470<br />
-              Email: barthel.linden@t-online.de
-            </p></td>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="label"><label for="von">von</label></td>
+          <td class="input" colspan="2"><input type="text" id="von" name="von" /></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="bis">bis</label></td>
+          <td class="input" colspan="2"><input type="text" id="bis" name="bis" /></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="Bemerkung">Bemerkung</label></td>
+          <td class="input" colspan="2"><textarea id="Bemerkung" name="Bemerkung" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td class="label">&nbsp;</td>
+          <td colspan="2" style="padding-top: 1em;">
+            <button type="submit">Anfrage abschicken</button>
+          </td>
         </tr>
       </table>
     </form>
   </div>
 
+  <aside>
+    <div id="aside">
+      <p>Nat&uuml;rlich k&ouml;nnen Sie uns auch ganz normal per Telefon und Post erreichen.</p>
+
+      <p>
+        Hier unsere Adresse:<br /> Fam. Barthel<br /> Linden 27<br /> 91635 Windelsbach<br /> Tel: 09861-6470<br />
+        Email: barthel.linden@t-online.de
+      </p>
+    </div>
+  </aside>
+
   <footer>
-    <ul id="navigation">
-      <li><a href="index.html">&ouml;kohof</a>
-      </li>
-      <li><a href="wohnungen.html">wohnungen</a>
-      </li>
-      <li><a href="galerie.html">galerie</a>
-      </li>
-      <li><a href="freizeit.html">freizeit</a>
-      </li>
-      <li><a href="demeter.html">demeter</a>
-      </li>
-      <li><a href="anfahrt.html">anfahrt</a>
-      </li>
-      <li id="selected">kontakt</li>
-      <li><a href="impressum.html">impressum</a>
-      </li>
-    </ul>
+    <nav>
+      <ul id="navigation">
+        <li><a href="index.html">&ouml;kohof</a></li>
+        <li><a href="wohnungen.html">wohnungen</a></li>
+        <li><a href="galerie.html">galerie</a></li>
+        <li><a href="freizeit.html">freizeit</a></li>
+        <li><a href="demeter.html">demeter</a></li>
+        <li><a href="anfahrt.html">anfahrt</a></li>
+        <li id="selected">kontakt</li>
+        <li><a href="impressum.html">impressum</a></li>
+      </ul>
+    </nav>
   </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
