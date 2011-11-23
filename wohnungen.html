@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" media="screen">
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
@@ -26,7 +27,7 @@
       </div>
     </header>
 
-    <div id="content" role="main">
+    <div id="content" role="main" class="fullwidth">
       <h1>Welche Zimmer gibt es?</h1>
       <p>
         Unsere drei Ferienwohnungen sind ein ganz besonderes Erlebnis:<br /> Sie liegen in einem urigen, typisch
@@ -86,45 +87,44 @@
         <tr>
           <td>
             <h2>Bilder Wohnung I</h2>
-            <ul id="gallery_w1">
-              <li><a href="img/wohnungen/1/schlafen_eltern.jpg" title="Schlafzimmer Eltern"><img
+            <ul id="gallery">
+              <li><a rel="wohnung1" href="img/wohnungen/1/schlafen_eltern.jpg" title="Schlafzimmer Eltern"><img
                   src="img/wohnungen/1/schlafen_eltern_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a href="img/wohnungen/1/schlafen_kinder.jpg" title="Schlafzimmer Kinder"><img
+              <li><a rel="wohnung1" href="img/wohnungen/1/schlafen_kinder.jpg" title="Schlafzimmer Kinder"><img
                   src="img/wohnungen/1/schlafen_kinder_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a href="img/wohnungen/1/wohnraum.jpg" title="Wohnraum"><img
+              <li><a rel="wohnung1" href="img/wohnungen/1/wohnraum.jpg" title="Wohnraum"><img
                   src="img/wohnungen/1/wohnraum_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a href="img/wohnungen/1/kueche.jpg" title="K&uuml;che"><img
+              <li><a rel="wohnung1" href="img/wohnungen/1/kueche.jpg" title="K&uuml;che"><img
                   src="img/wohnungen/1/kueche_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a href="img/wohnungen/1/bad.jpg" title="Badezimmer"><img src="img/wohnungen/1/bad_small.gif"
+              <li><a rel="wohnung1" href="img/wohnungen/1/bad.jpg" title="Badezimmer"><img src="img/wohnungen/1/bad_small.gif"
                   width="80" height="45" border="0" /></a></li>
             </ul>
           </td>
           <td>
             <h2>Bilder Wohnung II</h2>
-
-            <ul id="gallery_w2">
-              <li><a href="img/wohnungen/2/schlafen_eltern.jpg" title="Schlafzimmer Eltern"><img
+            <ul id="gallery">
+              <li><a rel="wohnung2" href="img/wohnungen/2/schlafen_eltern.jpg" title="Schlafzimmer Eltern"><img
                   src="img/wohnungen/2/schlafen_eltern_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a href="img/wohnungen/2/schlafen_kinder.jpg" title="Schlafzimmer Kinder"><img
+              <li><a rel="wohnung2" href="img/wohnungen/2/schlafen_kinder.jpg" title="Schlafzimmer Kinder"><img
                   src="img/wohnungen/2/schlafen_kinder_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a href="img/wohnungen/2/wohnzimmer.jpg" title="Wohnraum"><img
+              <li><a rel="wohnung2" href="img/wohnungen/2/wohnzimmer.jpg" title="Wohnraum"><img
                   src="img/wohnungen/2/wohnzimmer_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a href="img/wohnungen/2/kueche.jpg" title="K&uuml;che"><img
+              <li><a rel="wohnung2" href="img/wohnungen/2/kueche.jpg" title="K&uuml;che"><img
                   src="img/wohnungen/2/kueche_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a href="img/wohnungen/2/bad.jpg" title="Badezimmer"><img src="img/wohnungen/2/bad_small.gif"
+              <li><a rel="wohnung2" href="img/wohnungen/2/bad.jpg" title="Badezimmer"><img src="img/wohnungen/2/bad_small.gif"
                   width="80" height="45" border="0" /></a></li>
             </ul>
           </td>
           <td>
             <h2>Bilder Wohnung III</h2>
-            <ul id="gallery_w3">
-              <li><a href="img/wohnungen/3/schlafen.jpg" title="Schlafzimmer"><img
+            <ul id="gallery">
+              <li><a rel="wohnung3" href="img/wohnungen/3/schlafen.jpg" title="Schlafzimmer"><img
                   src="img/wohnungen/3/schlafen_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a href="img/wohnungen/3/wohnzimmer.jpg" title="Wohnraum"><img
+              <li><a rel="wohnung3" href="img/wohnungen/3/wohnzimmer.jpg" title="Wohnraum"><img
                   src="img/wohnungen/3/wohnzimmer_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a href="img/wohnungen/3/treppe.jpg" title="Treppe zum Schlafzimmer"><img
+              <li><a rel="wohnung3" href="img/wohnungen/3/treppe.jpg" title="Treppe zum Schlafzimmer"><img
                   src="img/wohnungen/3/treppe_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a href="img/wohnungen/3/bad.jpg" title="Badezimmer"><img src="img/wohnungen/3/bad_small.gif"
+              <li><a rel="wohnung3" href="img/wohnungen/3/bad.jpg" title="Badezimmer"><img src="img/wohnungen/3/bad_small.gif"
                   width="80" height="45" border="0" /></a></li>
             </ul>
           </td>
@@ -140,7 +140,7 @@
       <nav>
         <ul id="navigation">
           <li><a href="index.html">&ouml;kohof</a></li>
-          <li id="selected"><a href="wohnungen.html">wohnungen</a></li>
+          <li id="selected">wohnungen</li>
           <li><a href="galerie.html">galerie</a></li>
           <li><a href="freizeit.html">freizeit</a></li>
           <li><a href="demeter.html">demeter</a></li>
@@ -162,6 +162,38 @@
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
+  <script>
+    $(document).ready(function() {
+      $("a[rel='wohnung1']").fancybox({
+          'transitionIn'  : 'elastic',
+          'transitionOut' : 'elastic',
+          'speedIn'       : 500, 
+          'speedOut'      : 500, 
+          'overlayShow'   : true,
+          'overlayOpacity': 0.66,
+          'titlePosition' : 'over' 
+      });
+      $("a[rel='wohnung2']").fancybox({
+        'transitionIn'  : 'elastic',
+        'transitionOut' : 'elastic',
+        'speedIn'       : 500, 
+        'speedOut'      : 500, 
+        'overlayShow'   : true,
+        'overlayOpacity': 0.66,
+        'titlePosition' : 'over' 
+      });
+      $("a[rel='wohnung3']").fancybox({
+        'transitionIn'  : 'elastic',
+        'transitionOut' : 'elastic',
+        'speedIn'       : 500, 
+        'speedOut'      : 500, 
+        'overlayShow'   : true,
+        'overlayOpacity': 0.66,
+        'titlePosition' : 'over' 
+      });
+    });
+  </script>
+  
   <!--[if lt IE 7 ]>
     <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>

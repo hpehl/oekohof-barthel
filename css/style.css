@@ -51,9 +51,9 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
    Links
    ========================================================================== */
 
-a { color: #006; }
-a:visited { color: #003; }
-a:hover { color: #003; }
+a { color: #33c; text-decoration: none; }
+a:visited { color: #33c; }
+a:hover { text-decoration: underline; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -203,7 +203,7 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author:
+   Author: Harald Pehl
    ========================================================================== */
 div#container {
   width: 760px;
@@ -249,25 +249,62 @@ div#aside {
   width: 200px;
 }
 
+div#content ul#gallery {
+  padding: 0 10px 10px;
+  list-style: none;
+}
+
+div#content ul#gallery li {
+  display: inline;
+}
+
+div#content ul#gallery li img {
+  padding: 0 0 5px;
+}
+
+div#aside ul#logos {
+  padding: 0 10px 0;
+  margin: 0;
+  list-style: none;
+}
+
+div#aside ul#logos li {
+  padding: 0 0 10px;
+}
+
 ul#navigation {
   clear: right;
   color: #c60;
   background-color: white;
   padding-top: 10px;
+  list-style: none;
 }
 
 ul#navigation li {
   display: inline;
-  padding: 15px 15px 5px 15px;
 }
 
 ul#navigation li#selected {
-  border-left: 4px solid #f93;
-  border-right: 4px solid #f93;
+  background-color: #f93;
+  color: white;
+  padding: 15px 15px 5px 15px;
 }
 
-ul#navigation a,ul#navigation a:visited,ul#navigation a:hover,ul#navigation a:focus {
+ul#navigation a {
+  padding: 15px 15px 5px 15px;
+}
+
+ul#navigation a,ul#navigation a:visited,ul#navigation a:focus {
   color: #c60;
+}
+
+ul#navigation li:hover,ul#navigation a:hover {
+  background-color: #f93;
+  color: white;
+}
+
+ul#navigation a:hover {
+  text-decoration: none;
 }
 
 
