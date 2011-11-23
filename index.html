@@ -27,45 +27,51 @@
     </header>
 
     <aside>
-      <div id="aside">
-        <!-- UTF-8 -->
+      <div id="aside" style="width: 164px;">
         <!-- wetter.de wetter-widget 2.5.0 -->
         <script type="text/javascript" src="http://bilder.static-fra.de/wetter11/js/widget/wetter/widget.2.5.0.js"></script>
         <link href="http://bilder.static-fra.de/wetter11/css/widget/wetter/widget.2.5.0.css" rel="stylesheet" type="text/css" />
         <style type="text/css">
         <!--
-        .wetterde_widget_forecast .wetterde_widget_forecast_color {background-color:#ff9933; color:#ffffff;}
+        .wetterde_widget_forecast .wetterde_widget_forecast_color {background-color:#ff9933; color:#ffffff;font-family:sans-serif;}
+        .wetterde_widget_forecast_title {display: none;}
         -->
         </style>
-        
-        <div id="ww_4ec41ef0a10f1" class="wetterde_widget_forecast wetterde_widget_forecast_column2">
-        <div id="ww_4ec41ef0a10f1_box" class="wetterde_widget_forecast_box">
-        <div id="ww_4ec41ef0a10f1_content" class="wetterde_widget_forecast_content">
-        <div class="wetterde_widget_forecast_title">wetter.de Wetter-Widget</div>
-        <div class="wetterde_widget_forecast_loading"><div class="wetterde_widget_forecast_loading_text">Wetterdaten werden geladen</div></div>
-        </div>
-        <a id="ww_4ec41ef0a10f1_link1" class="wetterde_widget_forecast_link wetterde_widget_forecast_color" href="http://www.wetter.de/wettervorhersage/49-9263-27/wetter-windelsbach.html" target="_blank">Wetter Windelsbach</a>
-        
-        <a id="ww_4ec41ef0a10f1_link2" class="wetterde_widget_forecast_link_home wetterde_widget_forecast_color" href="http://www.wetter.de" target="_blank"><img id="ww_4ec41ef0a10f1_link_home_image" src="http://bilder.static-fra.de/wetter11/css/widget/wetter/images/logo.gif" width="120" height="28" alt="www.wetter.de" title="www.wetter.de" /></a>
-        </div>
-        
-        <script type="text/javascript">
-        /* <![CDATA[ */
-        (function(){
-        var wetterWidget = new RTLi.WetterWidget({
-        cfg_0: 'ww_4ec41ef0a10f1',
-        cfg_a: '49',
-        cfg_b: '9263',
-        cfg_c: 'http://www.wetter.de/wettervorhersage/49-9263-27/wetter-windelsbach.html',
-        cfg_d: '585fbfa6e74a77ed7bd0f8d0861f709f',
-        cfg_link: 'Wetter Windelsbach',
-        infos: [1,2]
-        });
-        wetterWidget.run();
-        }());
-        /* ]]> */
-        </script>
-        
+
+        <div id="ww_4ec41ef0a10f1" class="wetterde_widget_forecast wetterde_widget_forecast_column2"
+          style="padding-top: 0;">
+          <div id="ww_4ec41ef0a10f1_box" class="wetterde_widget_forecast_box">
+            <div id="ww_4ec41ef0a10f1_content" class="wetterde_widget_forecast_content">
+              <div class="wetterde_widget_forecast_title">wetter.de Wetter-Widget</div>
+              <div class="wetterde_widget_forecast_loading">
+                <div class="wetterde_widget_forecast_loading_text">Wetterdaten werden geladen</div>
+              </div>
+            </div>
+            <a id="ww_4ec41ef0a10f1_link1" class="wetterde_widget_forecast_link wetterde_widget_forecast_color"
+              href="http://www.wetter.de/wettervorhersage/49-9263-27/wetter-windelsbach.html" target="_blank">Wetter
+              Windelsbach</a> <a id="ww_4ec41ef0a10f1_link2"
+              class="wetterde_widget_forecast_link_home wetterde_widget_forecast_color" href="http://www.wetter.de"
+              target="_blank"><img id="ww_4ec41ef0a10f1_link_home_image"
+              src="http://bilder.static-fra.de/wetter11/css/widget/wetter/images/logo.gif" width="120" height="28"
+              alt="www.wetter.de" title="www.wetter.de" /></a>
+          </div>
+
+          <script type="text/javascript">
+            /* <![CDATA[ */
+            (function(){
+              var wetterWidget = new RTLi.WetterWidget({
+                cfg_0: 'ww_4ec41ef0a10f1',
+                cfg_a: '49',
+                cfg_b: '9263',
+                cfg_c: 'http://www.wetter.de/wettervorhersage/49-9263-27/wetter-windelsbach.html',
+                cfg_d: '585fbfa6e74a77ed7bd0f8d0861f709f',
+                cfg_link: 'Wetter Windelsbach',
+                infos: [1,2]
+              });
+              wetterWidget.run();
+            }());
+            /* ]]> */
+          </script>
         </div>
         <!-- /wetter.de wetter-widget 2.5.0 -->
       </div>
