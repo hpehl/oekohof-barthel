@@ -295,6 +295,10 @@ div#content legend {
   font-weight: bold;
 }
 
+div#content input[type="radio"] {
+  margin-top: 5px;
+}
+
 div#content input[type="text"], div#content input[type="date"], div#content textarea {
   line-height: 16px;
   margin: 0 5px 5px 0;
@@ -326,6 +330,10 @@ div#content input[type="submit"] {
 div#content input[type="submit"]:hover {
   background-color: #003;
   box-shadow: 2px 2px 4px #006;
+}
+
+.mrgri {
+  margin-right: 1em;
 }
 
 /*------------------------------------------------------------------ aside --*/

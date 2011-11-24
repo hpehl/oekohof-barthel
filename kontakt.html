@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.16.custom.css" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
@@ -53,15 +54,15 @@
           value="barthel.linden@t-online.de" />
         <fieldset>
           <ol>
-            <li><label for="Name">Name</label> <input type="text" id="Name" name="Name" /></li>
+            <li><label for="Name">Name</label> <input type="text" id="Name" name="Name" autofocus="autofocus"/></li>
             <li><label for="Strasse">Strasse</label> <input type="text" id="Strasse" name="Strasse" /></li>
             <li><label for="PLZ">PLZ</label> <input type="text" id="PLZ" name="PLZ" /></li>
             <li><label for="Stadt">Stadt</label> <input type="text" id="Stadt" name="Stadt" /></li>
             <li><label for="Email">E-Mail</label> <input type="text" id="Email" name="Email" /></li>
             <li><label for="Wohnung_1">Wohnung</label> <label for="Wohnung_1">I</label><input type="radio"
-              id="Wohnung_1" name="Wohnung" value="Wohung I" />&nbsp; <label for="Wohnung_2">II</label><input
-              type="radio" id="Wohnung_2" name="Wohnung" value="Wohung II" />&nbsp; <label for="Wohnung_3">III</label><input
-              type="radio" id="Wohnung_3" name="Wohnung" value="Wohung III" />&nbsp; <label for="keine_Angabe">keine
+              id="Wohnung_1" name="Wohnung" value="Wohung I" class="mrgri" /><label for="Wohnung_2">II</label><input
+              type="radio" id="Wohnung_2" name="Wohnung" value="Wohung II" class="mrgri"/><label for="Wohnung_3">III</label><input
+              type="radio" id="Wohnung_3" name="Wohnung" value="Wohung III" class="mrgri" /><label for="keine_Angabe">keine
                 Angabe</label><input type="radio" id="keine_Angabe" name="Wohnung" value="keine Angabe" checked="checked" /></li>
             <li><label for="Anzahl_Erwachsene">Erwachsene</label> <input type="text" id="Anzahl_Erwachsene"name="Anzahl_Erwachsene" /><li>
             <li><label for="Anzahl_Kinder">Kinder</label> <input type="text" id="Anzahl_Kinder" name="Anzahl_Kinder" /></li>
@@ -101,6 +102,15 @@
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  <script>
+    $(document).ready(function() {
+      var dates = $( "#von, #bis" ).datepicker({
+          firstDay: 1,
+          showWeek: true
+      });
+      $( "#von, #bis" ).datepicker($.datepicker.regional["de"]);
+    });
   </script>
   <!--[if lt IE 7 ]>
     <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
