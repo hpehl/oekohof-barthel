@@ -51,8 +51,8 @@ body, button, input, select, textarea { font-family: "Ubuntu", sans-serif; color
    Links
    ========================================================================== */
 
-a { color: #00c; text-decoration: none; }
-a:visited { color: #00c; }
+a { color: #009; text-decoration: none; }
+a:visited { color: #009; }
 a:hover { text-decoration: underline; }
 a:focus { outline: thin dotted; }
 

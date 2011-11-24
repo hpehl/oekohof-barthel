@@ -32,10 +32,12 @@
         <ul id="asidelist">
           <li><img src="img/karte.gif" width="350" height="477" alt="Naturpark Frankenh&ouml;he"
             title="Naturpark Frankenh&ouml;he" border="0" /></li>
-          <li style="text-align: right;"><iframe width="350" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-              src="http://maps.google.com/maps?q=Linden+27,+91635+Windelsbach,+Deutschland&amp;hl=de&amp;sll=49.400362,10.26432&amp;sspn=0.122436,0.308647&amp;vpsrc=6&amp;hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=49.45295,10.26535&amp;spn=0.160693,0.225906&amp;z=11&amp;output=embed"></iframe><br />
-          <small><a target="external"
-              href="http://maps.google.com/maps?q=Linden+27,+91635+Windelsbach,+Deutschland&amp;hl=de&amp;sll=49.400362,10.26432&amp;sspn=0.122436,0.308647&amp;vpsrc=6&amp;hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=49.45295,10.26535&amp;spn=0.160693,0.225906&amp;z=11&amp;source=embed">Größere Kartenansicht</a></small></li>
+          <li style="text-align: right;"><iframe width="350" height="360" frameborder="0" scrolling="no"
+              marginheight="0" marginwidth="0"
+              src="http://maps.google.com/maps?q=Linden+27,+91635+Windelsbach,+Deutschland&amp;hl=de&amp;sll=49.400362,10.26432&amp;sspn=0.122436,0.308647&amp;vpsrc=6&amp;hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&amp;t=m&amp;ie=UTF8&amp;hq=&amp;source=embed&amp;ll=49.476156,10.302429&amp;spn=0.321234,0.479279&amp;z=10&amp;output=embed&amp;iwloc=near"></iframe><br />
+          <small><a
+              href="http://maps.google.com/maps?q=Linden+27,+91635+Windelsbach,+Deutschland&amp;hl=de&amp;sll=49.400362,10.26432&amp;sspn=0.122436,0.308647&amp;vpsrc=6&amp;hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&amp;t=m&amp;ie=UTF8&amp;hq=&amp;source=embed&amp;ll=49.476156,10.302429&amp;spn=0.321234,0.479279&amp;z=10"
+              style="color: #0000FF; text-align: left">Größere Kartenansicht</a></small></li>
         </ul>
       </div>
     </aside>
@@ -49,13 +51,15 @@
       <p>Mit dem folgenden Formular k&ouml;nnen Sie mit Hilfe von Google Maps die Anfahrt zum &Ouml;kohof Barthel
         berechnen lassen:</p>
 
-      <form onsubmit="return false;" name="mapform" class="anfahrt">
+      <form action="http://maps.google.com/maps" method="get" class="anfahrt" target="external">
+        <input type="hidden" name="daddr" value="Linden 27, 91635 Windelsbach, Deutschland"/>
+        <input type="hidden" name="hl" value="de" />
         <fieldset>
           <legend>Start</legend>
+          <p>Bitte geben Sie Ihre Adresse ein. Sie m&uuml;ssen nicht die vollst&auml;ndige Adresse eingeben. Strasse
+            und Stadt gen&uuml;gen in den meisten F&auml;llen - z.B. &quot;Sonnenstrasse, München&quot;</p>
           <ol>
-            <li><input type="text" name="street" placeholder="Straße" /></li>
-            <li><input type="text" name="zip" placeholder="PLZ" /></li>
-            <li><input type="text" name="city" placeholder="Ort" /></li>
+            <li><input type="text" name="saddr" id="saddr" placeholder="Straße, PLZ und Ort" style="width: 90%;" /></li>
           </ol>
         </fieldset>
         <fieldset>
@@ -95,6 +99,17 @@
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  <script>
+    $(document).ready(function() {
+      $(' [placeholder] ').defaultValue();
+      $('#saddr').keypress(function (e) {
+    	if (e.which == 13) {
+          $('form').submit();
+          return true;
+    	}
+      });
+    });
   </script>
   <!--[if lt IE 7 ]>
     <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
