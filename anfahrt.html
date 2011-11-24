@@ -4,7 +4,7 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
@@ -27,11 +28,11 @@
     </header>
 
     <aside>
-      <div id="aside" style="width: 350px;">
+      <div id="aside" style="width: 370px;">
         <ul id="asidelist">
-          <li><img src="img/karte.gif" width="330" height="450" alt="Naturpark Frankenh&ouml;he"
+          <li><img src="img/karte.gif" width="350" height="477" alt="Naturpark Frankenh&ouml;he"
             title="Naturpark Frankenh&ouml;he" border="0" /></li>
-          <li><iframe width="330" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          <li style="text-align: right;"><iframe width="350" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
               src="http://maps.google.com/maps?q=Linden+27,+91635+Windelsbach,+Deutschland&amp;hl=de&amp;sll=49.400362,10.26432&amp;sspn=0.122436,0.308647&amp;vpsrc=6&amp;hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=49.45295,10.26535&amp;spn=0.160693,0.225906&amp;z=11&amp;output=embed"></iframe><br />
           <small><a target="external"
               href="http://maps.google.com/maps?q=Linden+27,+91635+Windelsbach,+Deutschland&amp;hl=de&amp;sll=49.400362,10.26432&amp;sspn=0.122436,0.308647&amp;vpsrc=6&amp;hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=49.45295,10.26535&amp;spn=0.160693,0.225906&amp;z=11&amp;source=embed">Größere Kartenansicht</a></small></li>
@@ -39,7 +40,7 @@
       </div>
     </aside>
 
-    <div id="content" role="main" style="width: 410px;">
+    <div id="content" role="main" style="width: 390px;">
       <h1>Wie kommen wir hin?</h1>
       <p>
         Auf der rechten Seite sehen Sie die Lage des <a target="external" href="http://www.naturpark-frankenhoehe.de/">Naturparks
@@ -48,12 +49,13 @@
       <p>Mit dem folgenden Formular k&ouml;nnen Sie mit Hilfe von Google Maps die Anfahrt zum &Ouml;kohof Barthel
         berechnen lassen:</p>
 
-      <form onsubmit="return false;" name="mapform">
+      <form onsubmit="return false;" name="mapform" class="anfahrt">
         <fieldset>
           <legend>Start</legend>
           <ol>
             <li><input type="text" name="street" placeholder="Straße" /></li>
-            <li><input type="text" name="zip" placeholder="PLZ" /> <input type="text" name="city" placeholder="Ort" /></li>
+            <li><input type="text" name="zip" placeholder="PLZ" /></li>
+            <li><input type="text" name="city" placeholder="Ort" /></li>
           </ol>
         </fieldset>
         <fieldset>
