@@ -239,7 +239,7 @@
     
     <!-- Target: version -->
     <target name="-version.update">
-        <propertyfile file="build/config/version.properties" comment="Version and build information about oekohof-barthel.de">
+        <propertyfile file="version.txt" comment="Version and build information about oekohof-barthel.de">
             <entry key="buildnumber" type="int" default="0" operation="+" />
             <entry key="builddate" type="date" value="now" pattern="dd.MM.yyyy HH:mm:ss" />
         </propertyfile>
