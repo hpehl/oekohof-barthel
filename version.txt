@@ -1,5 +1,5 @@
 #Version and build information about oekohof-barthel.de
-#Wed, 30 Nov 2011 20:20:01 +0100
+#Thu, 05 Jan 2012 23:04:24 +0100
 version=1.0
-buildnumber=4
-builddate=30.11.2011 20\:20\:01
+buildnumber=6
+builddate=05.01.2012 23\:04\:24
