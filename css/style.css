@@ -216,7 +216,7 @@ div#container {
 /*--------------------------------------------------------- content basics --*/
 div#content {
   width: 560px;
-  min-height: 300px;
+  min-height: 400px;
 }
 
 div#content.fullwidth {
