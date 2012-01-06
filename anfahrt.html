@@ -104,7 +104,6 @@
   </script>
   <script>
     $(document).ready(function() {
-      $(' [placeholder] ').defaultValue();
       $('#saddr').keypress(function (e) {
     	if (e.which == 13) {
           $('form').submit();
@@ -113,6 +112,13 @@
       });
     });
   </script>
+  <!--[if lt IE 8 ]>
+    <script>
+      $(document).ready(function() {
+        $("#content").height($("#aside").height());
+      });    
+    </script>
+  <![endif]-->
   <!--[if lt IE 7 ]>
     <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
