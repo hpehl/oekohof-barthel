@@ -1,201 +1,193 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
   <title>&Ouml;kohof Familie Barthel | Wohnungen</title>
-  <meta http-equiv="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach"/>
-  <meta name="author" content="Harald Pehl">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" media="screen">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Harald Pehl">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
+
+    <script src="js/vendor/modernizr-2.6.2-custom.js"></script>
 </head>
 
 <body>
-  <div id="container">
+<!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/">upgrade your browser</a> or <a
+        href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your
+    experience.</p><![endif]-->
+
+<div class="container">
     <header>
-      <div id="header">
-        <img src="img/header_zimmer.jpg" width="760" height="130" title="" alt="" />
-      </div>
+        <img src="img/header_zimmer.jpg" width="760" height="130" title="" alt=""/>
     </header>
 
-    <div id="content" role="main" class="fullwidth">
-      <h1>Welche Zimmer gibt es?</h1>
-      <p>
-        Unsere drei Ferienwohnungen sind ein ganz besonderes Erlebnis: Sie liegen in einem urigen, typisch
-        fr&auml;nkischen Bauernhaus aus dem 19.&nbsp;Jahrhundert.
-      </p>
-      <p>Alle Wohnungen sind neu m&ouml;biliert mit Telefon und TV-Anschluss komplett ausgestattet. Bettw&auml;sche
-        und Handt&uuml;cher werden von uns gestellt. Eine Waschmaschine steht zur Verf&uuml;gung.</p>
-      <p>Bei allen Wohnungen gilt eine Endreinigungspauschale von 20 Euro, die ab sieben Übernachtungen entfällt.</p>
+    <div class="content" role="main">
+        <h1>Welche Zimmer gibt es?</h1>
+        <p>Unsere drei Ferienwohnungen sind ein ganz besonderes Erlebnis: Sie liegen in einem urigen, typisch
+            fr&auml;nkischen Bauernhaus aus dem 19.&nbsp;Jahrhundert.
+        </p>
+        <p>Alle Wohnungen sind komplett m&ouml;biliert und mit Telefon und TV-Anschluss komplett ausgestattet. Bettw&auml;sche
+            und Handt&uuml;cher werden von uns gestellt. Eine Waschmaschine steht zur Verf&uuml;gung.</p>
+        <p>Bei allen Wohnungen gilt eine Endreinigungspauschale von 20 Euro, die ab sieben Übernachtungen entfällt.</p>
 
-      <table id="wohnungen">
-        <tr>
-          <td>
-            <h2>Wohnung I</h2>
-            <ul>
-              <li>65 m&sup2; (f&uuml;r bis zu 7 Personen)</li>
-              <li>Erdgeschoss</li>
-              <li>Wohn- und Schlafraum</li>
-              <li>K&uuml;che mit E&szlig;platz</li>
-              <li>Schlafzimmer</li>
-              <li>Kinderzimmer</li>
-              <li>Dusche &amp; WC</li>
-              <li>Terrasse</li>
-              <li>Preis: 53,00 &euro; (bis 6 Personen, je weitere Person ab 3 Jahre 7 &euro;)</li>
-            </ul>
-          </td>
-          <td>
-            <h2>Wohnung II</h2>
-            <ul>
-              <li>56 m&sup2; (f&uuml;r bis zu 7 Personen)</li>
-              <li>1. Stock</li>
-              <li>Wohn- und Schlafraum</li>
-              <li>K&uuml;che mit E&szlig;platz</li>
-              <li>Schlafzimmer</li>
-              <li>Kinderzimmer</li>
-              <li>Dusche &amp; WC</li>
-              <li>Preis: 48,00 &euro; (bis 5 Personen, je weitere Person ab 3 Jahre 7 &euro;)</li>
-            </ul>
-          </td>
-          <td>
-            <h2>Wohnung III</h2>
-            <ul>
-              <li>45 m&sup2; (f&uuml;r bis zu 6 Personen)</li>
-              <li>1. Stock</li>
-              <li>Wohn- und Schlafraum</li>
-              <li>K&uuml;che mit E&szlig;platz</li>
-              <li>Schlafraum (liegt eine Etage h&ouml;her)</li>
-              <li>Dusche &amp; WC</li>
-              <li>Preis: 37,00 &euro; (bis 4 Personen, je weitere Person ab 3 Jahre 7 &euro;)</li>
-              <li>Die verschiedenen R&auml;ume sind nicht durch T&uuml;ren abgetrennt</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h2>Bilder Wohnung I</h2>
-            <ul id="gallery">
-              <li><a rel="wohnung1" href="img/wohnungen/1/schlafen_eltern.jpg" title="Schlafzimmer Eltern"><img
-                  src="img/wohnungen/1/schlafen_eltern_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a rel="wohnung1" href="img/wohnungen/1/schlafen_kinder.jpg" title="Schlafzimmer Kinder"><img
-                  src="img/wohnungen/1/schlafen_kinder_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a rel="wohnung1" href="img/wohnungen/1/wohnraum.jpg" title="Wohnraum"><img
-                  src="img/wohnungen/1/wohnraum_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a rel="wohnung1" href="img/wohnungen/1/kueche.jpg" title="K&uuml;che"><img
-                  src="img/wohnungen/1/kueche_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a rel="wohnung1" href="img/wohnungen/1/bad.jpg" title="Badezimmer"><img src="img/wohnungen/1/bad_small.gif"
-                  width="80" height="45" border="0" /></a></li>
-            </ul>
-          </td>
-          <td>
-            <h2>Bilder Wohnung II</h2>
-            <ul id="gallery">
-              <li><a rel="wohnung2" href="img/wohnungen/2/schlafen_eltern.jpg" title="Schlafzimmer Eltern"><img
-                  src="img/wohnungen/2/schlafen_eltern_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a rel="wohnung2" href="img/wohnungen/2/schlafen_kinder.jpg" title="Schlafzimmer Kinder"><img
-                  src="img/wohnungen/2/schlafen_kinder_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a rel="wohnung2" href="img/wohnungen/2/wohnzimmer.jpg" title="Wohnraum"><img
-                  src="img/wohnungen/2/wohnzimmer_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a rel="wohnung2" href="img/wohnungen/2/kueche.jpg" title="K&uuml;che"><img
-                  src="img/wohnungen/2/kueche_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a rel="wohnung2" href="img/wohnungen/2/bad.jpg" title="Badezimmer"><img src="img/wohnungen/2/bad_small.gif"
-                  width="80" height="45" border="0" /></a></li>
-            </ul>
-          </td>
-          <td>
-            <h2>Bilder Wohnung III</h2>
-            <ul id="gallery">
-              <li><a rel="wohnung3" href="img/wohnungen/3/schlafen.jpg" title="Schlafzimmer"><img
-                  src="img/wohnungen/3/schlafen_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a rel="wohnung3" href="img/wohnungen/3/wohnzimmer.jpg" title="Wohnraum"><img
-                  src="img/wohnungen/3/wohnzimmer_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a rel="wohnung3" href="img/wohnungen/3/treppe.jpg" title="Treppe zum Schlafzimmer"><img
-                  src="img/wohnungen/3/treppe_small.gif" width="80" height="45" border="0" /></a></li>
-              <li><a rel="wohnung3" href="img/wohnungen/3/bad.jpg" title="Badezimmer"><img src="img/wohnungen/3/bad_small.gif"
-                  width="80" height="45" border="0" /></a></li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-      <p>
-        Falls Sie Interesse an einer unserer Ferienwohnungen haben, k&ouml;nnen Sie sie unter <a href="kontakt.html">Kontakt</a>
-        reservieren.
-      </p>
+        <table class="wohnungen">
+            <tr>
+                <td>
+                    <h2>Wohnung I</h2>
+                    <ul>
+                        <li>65 m&sup2; (f&uuml;r bis zu 7 Personen)</li>
+                        <li>Erdgeschoss</li>
+                        <li>Wohn- und Schlafraum</li>
+                        <li>K&uuml;che mit E&szlig;platz</li>
+                        <li>Schlafzimmer</li>
+                        <li>Kinderzimmer</li>
+                        <li>Dusche &amp; WC</li>
+                        <li>Geschirrspüler</li>
+                        <li>Schwefelofen</li>
+                        <li>Terrasse</li>
+                        <li>Preis: 53,00 &euro; (bis 6 Personen, je weitere Person ab 3 Jahre 7 &euro;)</li>
+                    </ul>
+                </td>
+                <td>
+                    <h2>Wohnung II</h2>
+                    <ul>
+                        <li>56 m&sup2; (f&uuml;r bis zu 7 Personen)</li>
+                        <li>1. Stock</li>
+                        <li>Wohn- und Schlafraum</li>
+                        <li>K&uuml;che mit E&szlig;platz</li>
+                        <li>Schlafzimmer</li>
+                        <li>Kinderzimmer</li>
+                        <li>Dusche &amp; WC</li>
+                        <li>Preis: 48,00 &euro; (bis 5 Personen, je weitere Person ab 3 Jahre 7 &euro;)</li>
+                    </ul>
+                </td>
+                <td>
+                    <h2>Wohnung III</h2>
+                    <ul>
+                        <li>45 m&sup2; (f&uuml;r bis zu 4 Personen)</li>
+                        <li>1. Stock</li>
+                        <li>Wohn- und Schlafraum</li>
+                        <li>K&uuml;che mit E&szlig;platz</li>
+                        <li>Schlafraum (liegt eine Etage h&ouml;her)</li>
+                        <li>Dusche &amp; WC</li>
+                        <li>Preis: 37,00 &euro; (bis 4 Personen, je weitere Person ab 3 Jahre 7 &euro;)</li>
+                        <li>Die verschiedenen R&auml;ume sind nicht durch T&uuml;ren abgetrennt</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Bilder Wohnung I</h2>
+                    <ul class="gallery">
+                        <li><a rel="wohnung1" href="img/wohnungen/1/wohnraum.jpg" title="Wohnraum">
+                            <img src="img/wohnungen/1/wohnraum_small.jpg"/></a></li>
+                        <li><a rel="wohnung1" href="img/wohnungen/1/schwefelofen.jpg" title="Schwefelofen" style="margin: 0 25px">
+                            <img src="img/wohnungen/1/schwefelofen_small.jpg"/></a></li>
+                        <li><a rel="wohnung1" href="img/wohnungen/1/kueche.jpg" title="K&uuml;che">
+                            <img src="img/wohnungen/1/kueche_small.jpg"/></a></li>
+                        <li><a rel="wohnung1" href="img/wohnungen/1/schlafen_eltern.jpg" title="Schlafzimmer Eltern">
+                            <img src="img/wohnungen/1/schlafen_eltern_small.jpg"/></a></li>
+                        <li><a rel="wohnung1" href="img/wohnungen/1/schlafen_kinder.jpg" title="Schlafzimmer Kinder">
+                            <img src="img/wohnungen/1/schlafen_kinder_small.jpg"/></a></li>
+                        <li><a rel="wohnung1" href="img/wohnungen/1/bad.jpg" title="Badezimmer">
+                            <img src="img/wohnungen/1/bad_small.jpg"/></a></li>
+                    </ul>
+                </td>
+                <td>
+                    <h2>Bilder Wohnung II</h2>
+                    <ul class="gallery">
+                        <li><a rel="wohnung2" href="img/wohnungen/2/wohnzimmer.jpg" title="Wohnraum">
+                            <img src="img/wohnungen/2/wohnzimmer_small.jpg"/></a></li>
+                        <li><a rel="wohnung2" href="img/wohnungen/2/kueche.jpg" title="K&uuml;che">
+                            <img src="img/wohnungen/2/kueche_small.jpg"/></a></li>
+                        <li><a rel="wohnung2" href="img/wohnungen/2/schlafen_eltern.jpg" title="Schlafzimmer Eltern">
+                            <img src="img/wohnungen/2/schlafen_eltern_small.jpg"/></a></li>
+                        <li><a rel="wohnung2" href="img/wohnungen/2/schlafen_kinder.jpg" title="Schlafzimmer Kinder">
+                            <img src="img/wohnungen/2/schlafen_kinder_small.jpg"/></a></li>
+                        <li><a rel="wohnung2" href="img/wohnungen/2/bad.jpg" title="Badezimmer" style="margin: 0 25px">
+                            <img src="img/wohnungen/2/bad_small.jpg"/></a></li>
+                    </ul>
+                </td>
+                <td>
+                    <h2>Bilder Wohnung III</h2>
+                    <ul class="gallery">
+                        <li><a rel="wohnung3" href="img/wohnungen/3/wohnzimmer.jpg" title="Wohnraum">
+                            <img src="img/wohnungen/3/wohnzimmer_small.jpg"/></a></li>
+                        <li><a rel="wohnung3" href="img/wohnungen/3/kueche.jpg" title="Küche">
+                            <img src="img/wohnungen/3/kueche_small.jpg"/></a></li>
+                        <li><a rel="wohnung3" href="img/wohnungen/3/schlafen.jpg" title="Schlafzimmer">
+                            <img src="img/wohnungen/3/schlafen_small.jpg"/></a></li>
+                        <li><a rel="wohnung3" href="img/wohnungen/3/bad.jpg" title="Badezimmer">
+                            <img src="img/wohnungen/3/bad_small.gif"/></a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p>
+            Falls Sie Interesse an einer unserer Ferienwohnungen haben, k&ouml;nnen Sie sie unter <a
+                href="kontakt.html">Kontakt</a>
+            reservieren.
+        </p>
     </div>
 
     <footer>
-      <nav>
-        <ul id="navigation">
-          <li><a href="index.html">&ouml;kohof</a></li>
-          <li id="selected">wohnungen</li>
-          <li><a href="galerie.html">galerie</a></li>
-          <li><a href="freizeit.html">freizeit</a></li>
-          <li><a href="demeter.html">demeter</a></li>
-          <li><a href="anfahrt.html">anfahrt</a></li>
-          <li><a href="kontakt.html">kontakt</a></li>
-          <li><a href="impressum.html">impressum</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">&ouml;kohof</a></li>
+                <li class="selected">wohnungen</li>
+                <li><a href="galerie.html">galerie</a></li>
+                <li><a href="freizeit.html">freizeit</a></li>
+                <li><a href="demeter.html">demeter</a></li>
+                <li><a href="anfahrt.html">anfahrt</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+                <li><a href="impressum.html">impressum</a></li>
+            </ul>
+        </nav>
     </footer>
-  </div>
+</div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.0.min.js"><\/script>')</script>
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  <!-- end scripts-->
-  <script>
-    var _gaq=[['_setAccount','UA-383464-1'],['_trackPageview'],['_trackPageLoadTime']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-  <script>
-    $(document).ready(function() {
-      $("a[rel='wohnung1']").fancybox({
-          'transitionIn'  : 'elastic',
-          'transitionOut' : 'elastic',
-          'speedIn'       : 500, 
-          'speedOut'      : 500, 
-          'overlayShow'   : true,
-          'overlayOpacity': 0.66,
-          'titlePosition' : 'over' 
-      });
-      $("a[rel='wohnung2']").fancybox({
-        'transitionIn'  : 'elastic',
-        'transitionOut' : 'elastic',
-        'speedIn'       : 500, 
-        'speedOut'      : 500, 
-        'overlayShow'   : true,
-        'overlayOpacity': 0.66,
-        'titlePosition' : 'over' 
-      });
-      $("a[rel='wohnung3']").fancybox({
-        'transitionIn'  : 'elastic',
-        'transitionOut' : 'elastic',
-        'speedIn'       : 500, 
-        'speedOut'      : 500, 
-        'overlayShow'   : true,
-        'overlayOpacity': 0.66,
-        'titlePosition' : 'over' 
-      });
+<!-- JQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/vendor/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="js/vendor/jquery.fancybox-2.1.5.pack.js"></script>
+
+<!-- Google Analytics -->
+<script>
+    var _gaq = [
+        ['_setAccount', 'UA-383464-1'],
+        ['_trackPageview']
+    ];
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = '//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("a[rel='wohnung1']").fancybox({
+            loop: false
+        });
+        $("a[rel='wohnung2']").fancybox({
+            loop: false
+        });
+        $("a[rel='wohnung3']").fancybox({
+            loop: false
+        });
     });
-  </script>
-  
-  <!--[if lt IE 7 ]>
-    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+</script>
 </body>
 </html>

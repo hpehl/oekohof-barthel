@@ -1,144 +1,149 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&Ouml;kohof Familie Barthel | Home</title>
 
-  <title>&Ouml;kohof Familie Barthel | Home</title>
-  <meta http-equiv="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach"/>
-  <meta name="author" content="Harald Pehl">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Harald Pehl">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
+    <link rel="stylesheet" href="http://bilder.static-fra.de/wetter11/css/WetterWidget/WeatherClassic.3.0.1.css">
+    <style type="text/css">
+        .wetterde_widget_classic_forecast .wetterde_widget_classic_forecast_color {
+            background-color: #ff9933;
+            color: #ffffff;
+        }
+
+        .wetterde_widget_classic_forecast_title {
+            display: none !important;
+            visibility: hidden;
+        }
+    </style>
+
+    <script src="js/vendor/modernizr-2.6.2-custom.js"></script>
 </head>
 
 <body>
-  <div id="container">
+<!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/">upgrade your browser</a> or <a
+        href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your
+    experience.</p><![endif]-->
+
+<div class="container">
     <header>
-      <div id="header">
-        <img src="img/header_home.jpg" width="760" height="130" title="" alt="" />
-      </div>
+        <img src="img/header_home.jpg" width="760" height="130" title="" alt=""/>
     </header>
 
-    <aside>
-      <div id="aside" style="width: 164px;">
-        <!-- wetter.de wetter-widget 2.5.0 -->
-        <script type="text/javascript" src="http://bilder.static-fra.de/wetter11/js/widget/wetter/widget.2.5.0.js"></script>
-        <link href="http://bilder.static-fra.de/wetter11/css/widget/wetter/widget.2.5.0.css" rel="stylesheet" type="text/css" />
-        <style type="text/css">
-        <!--
-        .wetterde_widget_forecast .wetterde_widget_forecast_color {background-color:#ff9933; color:#ffffff;font-family:"Ubuntu", sans-serif;}
-        .wetterde_widget_forecast_title {display: none;}
-        -->
-        </style>
-
-        <div id="ww_4ec41ef0a10f1" class="wetterde_widget_forecast wetterde_widget_forecast_column2"
-          style="padding-top: 0;">
-          <div id="ww_4ec41ef0a10f1_box" class="wetterde_widget_forecast_box">
-            <div id="ww_4ec41ef0a10f1_content" class="wetterde_widget_forecast_content">
-              <div class="wetterde_widget_forecast_title">wetter.de Wetter-Widget</div>
-              <div class="wetterde_widget_forecast_loading">
-                <div class="wetterde_widget_forecast_loading_text">Wetterdaten werden geladen</div>
-              </div>
+    <aside style="width: 164px">
+        <div id="ww_51e56c7f5ef14" class="wetterde_widget_classic_forecast" style="background-color: #f93">
+            <div id="ww_51e56c7f5ef14_box"
+                 class="wetterde_widget_classic_forecast_box wetterde_widget_classic_forecast_column2" style="padding: 0 0 8px 0">
+                <div id="ww_51e56c7f5ef14_content" class="wetterde_widget_classic_forecast_content">
+                    <div class="wetterde_widget_classic_forecast_title">wetter.de Wetter-Widget</div>
+                    <div class="wetterde_widget_classic_forecast_loading">
+                        <div class="wetterde_widget_classic_forecast_loading_text">Wetterdaten werden geladen</div>
+                    </div>
+                </div>
+                <a id="ww_51e56c7f5ef14_link1"
+                   class="wetterde_widget_classic_forecast_link wetterde_widget_classic_forecast_color"
+                   href="http://www.wetter.de/deutschland/wetter-windelsbach-18227360.html" target="_blank">Wetter
+                    Windelsbach</a>
+                <a id="ww_51e56c7f5ef14_link2"
+                   class="wetterde_widget_classic_forecast_link_home wetterde_widget_classic_forecast_color"
+                   href="http://www.wetter.de" target="_blank"><img id="ww_51e56c7f5ef14_link_home_image"
+                                                                    src="http://bilder.static-fra.de/wetter11/css/widget/wetter/images/logo.gif"
+                                                                    width="120" height="28" alt="www.wetter.de"
+                                                                    title="www.wetter.de"/></a>
             </div>
-            <a id="ww_4ec41ef0a10f1_link1" class="wetterde_widget_forecast_link wetterde_widget_forecast_color"
-              href="http://www.wetter.de/wettervorhersage/49-9263-27/wetter-windelsbach.html" target="_blank">Wetter
-              Windelsbach</a> <a id="ww_4ec41ef0a10f1_link2"
-              class="wetterde_widget_forecast_link_home wetterde_widget_forecast_color" href="http://www.wetter.de"
-              target="_blank"><img id="ww_4ec41ef0a10f1_link_home_image"
-              src="http://bilder.static-fra.de/wetter11/css/widget/wetter/images/logo.gif" width="120" height="28"
-              alt="www.wetter.de" title="www.wetter.de" /></a>
-          </div>
-
-          <script type="text/javascript">
-            /* <![CDATA[ */
-            (function(){
-              var wetterWidget = new RTLi.WetterWidget({
-                cfg_0: 'ww_4ec41ef0a10f1',
-                cfg_a: '49',
-                cfg_b: '9263',
-                cfg_c: 'http://www.wetter.de/wettervorhersage/49-9263-27/wetter-windelsbach.html',
-                cfg_d: '585fbfa6e74a77ed7bd0f8d0861f709f',
-                cfg_link: 'Wetter Windelsbach',
-                infos: [1,2]
-              });
-              wetterWidget.run();
-            }());
-            /* ]]> */
-          </script>
+            <div class="wetterde_widget_classic_forecast_column2 wetterde_widget_classic_border_off hidden">
+                <a id="ww_51e56c7f5ef14_link3" class="wetterde_widget_classic_forecast_link_create"
+                   href="http://www.wetter.de/tools/wetter-widget" target="_blank">&raquo; eigenes Widget erstellen</a>
+            </div>
         </div>
-        <!-- /wetter.de wetter-widget 2.5.0 -->
-      </div>
     </aside>
-  
-    <div id="content" role="main" style="width: 596px;">
-      <h1>Was ist der &Ouml;kohof Barthel?</h1>
-      <p>
-        Lieber Gast,<br /> unser Hof liegt in <a target="external"
-          href="http://maps.google.com/maps?q=Linden+27,+91635+Windelsbach,+Deutschland&hl=de&ll=49.399803,10.264664&spn=0.122438,0.308647&sll=49.400362,10.26432&sspn=0.122436,0.308647&vpsrc=6&hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&t=m&z=12">Linden</a>,
-        einem kleinen Ort ca. 7 km &ouml;stlich von Rothenburg&nbsp;o.T. mitten im <a target="external"
-          href="http://www.naturpark-frankenhoehe.de/">Naturpark Frankenh&ouml;he</a>.
-      </p>
 
-      <p>
-        Sie haben die Wahl zwischen drei <a href="wohnungen.html">Ferienwohungen</a> in einem urigen, typisch
-        fr&auml;nkischen Bauernhaus aus dem fr&uuml;hen 19.&nbsp;Jahrhundert. Die Wohnungen sind neu m&ouml;biliert, mit
-        Telefon und TV-Anschluss.
-      </p>
-
-      <p>
-        Auf unserem nach biologisch-dynamischer Wirtschaftsweise (<a href="demeter.html">Demeter</a>) bewirtschafteten Hof
-        bieten wir Ihnen seit 1995 zum Beispiel:
-      </p>
-  
-      <ul>
-        <li>Einen gro&szlig;en Garten zum Spielen, Sitzen, Grillen und Zelten.</li>
-        <li>Viel Wald und gut ausgebaute Rad- und Wanderwege</li>
-        <li>Einen gem&uuml;tlichen Aufenthaltsraum mit TV.</li>
-        <li>Auf Wunsch Felderbegehung, Informationen &uuml;ber &Ouml;kolandbau und Mitarbeit auf dem Hof.</li>
-        <li>Viele Tiere - Ideal f&uuml;r Kinder / familienfreundlich</li>
-      </ul>
-      <p>Viel Spa&szlig; beim Surfen auf unseren Seiten!</p>
-    </div>
-  
-    <footer>
-      <nav>
-        <ul id="navigation">
-          <li id="selected">&ouml;kohof</li>
-          <li><a href="wohnungen.html">wohnungen</a></li>
-          <li><a href="galerie.html">galerie</a></li>
-          <li><a href="freizeit.html">freizeit</a></li>
-          <li><a href="demeter.html">demeter</a></li>
-          <li><a href="anfahrt.html">anfahrt</a></li>
-          <li><a href="kontakt.html">kontakt</a></li>
-          <li><a href="impressum.html">impressum</a></li>
+    <div class="content" style="width: 596px" role="main">
+        <h1>Was ist der &Ouml;kohof Barthel?</h1>
+        <p>
+            Lieber Gast,<br/> unser Hof liegt in <a target="external"
+                                                    href="http://maps.google.com/maps?q=Linden+27,+91635+Windelsbach,+Deutschland&hl=de&ll=49.399803,10.264664&spn=0.122438,0.308647&sll=49.400362,10.26432&sspn=0.122436,0.308647&vpsrc=6&hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&t=m&z=12">Linden</a>,
+            einem kleinen Ort ca. 7 km &ouml;stlich von Rothenburg&nbsp;o.T. mitten im <a target="external"
+                                                                                          href="http://www.naturpark-frankenhoehe.de/">Naturpark
+            Frankenh&ouml;he</a>.
+        </p>
+        <p>
+            Sie haben die Wahl zwischen drei <a href="wohnungen.html">Ferienwohungen</a> in einem urigen, typisch
+            fr&auml;nkischen Bauernhaus aus dem fr&uuml;hen 19.&nbsp;Jahrhundert. 
+        </p>
+        <p>
+            Auf unserem nach biologisch-dynamischer Wirtschaftsweise (<a href="demeter.html">Demeter</a>)
+            bewirtschafteten Hof bieten wir Ihnen seit 1995 zum Beispiel:
+        </p>
+        <ul>
+            <li>Einen gro&szlig;en Garten zum Spielen, Sitzen, Grillen und Zelten.</li>
+            <li>Viel Wald und gut ausgebaute Rad- und Wanderwege</li>
+            <li>Einen gem&uuml;tlichen Aufenthaltsraum mit TV.</li>
+            <li>Auf Wunsch Felderbegehung, Informationen &uuml;ber &Ouml;kolandbau und Mitarbeit auf dem Hof.</li>
+            <li>Viele Tiere - Ideal f&uuml;r Kinder / familienfreundlich</li>
         </ul>
-      </nav>
-    </footer>
-  </div>
+        <p>Viel Spa&szlig; beim Surfen auf unseren Seiten!</p>
+    </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.0.min.js"><\/script>')</script>
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  <!-- end scripts-->
-  <script>
-    var _gaq=[['_setAccount','UA-383464-1'],['_trackPageview'],['_trackPageLoadTime']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-  <!--[if lt IE 7 ]>
-    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+    <footer>
+        <nav>
+            <ul class="navigation">
+                <li class="selected">&ouml;kohof</li>
+                <li><a href="wohnungen.html">wohnungen</a></li>
+                <li><a href="galerie.html">galerie</a></li>
+                <li><a href="freizeit.html">freizeit</a></li>
+                <li><a href="demeter.html">demeter</a></li>
+                <li><a href="anfahrt.html">anfahrt</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+                <li><a href="impressum.html">impressum</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+
+<!-- JQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+
+<!-- Google Analytics -->
+<script>
+    var _gaq = [
+        ['_setAccount', 'UA-383464-1'],
+        ['_trackPageview']
+    ];
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = '//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+</script>
+
+<!-- wetter.de wetter-widget 3.0.1 -->
+<script src="http://bilder.static-fra.de/wetter11/js/WetterWidget/WeatherClassic.3.0.1.js"></script>
+<script>
+    (function () {
+        var wetterWidget = new WT.Widget.WeatherClassic({
+            cfg_0: 'ww_51e56c7f5ef14',
+            cfg_a: '18227360',
+            cfg_b: 'http://www.wetter.de/deutschland/wetter-windelsbach-18227360.html',
+            cfg_link: 'Wetter Windelsbach',
+            infos: [1, 2]
+        });
+        wetterWidget.run();
+    }());
+</script>
 </body>
 </html>
