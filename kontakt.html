@@ -133,7 +133,7 @@
         bisElem.setCustomValidity("");
         
         if (vonGiven) {
-            var von = Date.parse(vonElem.value).clearTime();
+            var von = Date.parseExact(vonElem.value, "yyyy-MM-dd").clearTime();
             if (von.isBefore(Date.today())) {
                 valid = false;
                 vonElem.setCustomValidity("Das Datum darf nicht in der Vergangenheit liegen.");
@@ -141,7 +141,7 @@
         }
         
         if (bisGiven) {
-            var bis = Date.parse(bisElem.value).clearTime();
+            var bis = Date.parseExact(bisElem.value, "yyyy-MM-dd").clearTime();
             if (bis.isBefore(Date.today())) {
                 valid = false;
                 bisElem.setCustomValidity("Das Datum darf nicht in der Vergangenheit liegen.");
@@ -150,7 +150,7 @@
         
         if (vonGiven && bisGiven && valid) {
             if (von.isAfter(bis)) {
-                bisElem.setCustomValidity("Das Datum in 'von' (" + von.toString("dd.MM.yyyy") + ") darf nicht hinter dem Datum in 'bis' (" + bis.toString("dd.MM.yyyy") + ") liegen.");
+                bisElem.setCustomValidity("Das Datum in 'von' (" + von.toString("dd.MM.yyyy") + ") darf nicht nach dem Datum in 'bis' (" + bis.toString("dd.MM.yyyy") + ") liegen.");
             }
             else {
                 von.addDays(3);
