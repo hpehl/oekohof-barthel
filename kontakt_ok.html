@@ -1,75 +1,76 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <base href="http://www.oekohof-barthel.de"/>
+    <title>&Ouml;kohof Familie Barthel | E-Mail erfolgreich versendet</title>
 
-  <title>&Ouml;kohof Familie Barthel | E-Mail erfolgreich versendet</title>
-  <meta http-equiv="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach"/>
-  <meta name="author" content="Harald Pehl">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Harald Pehl">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
+
+    <script src="js/vendor/modernizr-2.6.2-custom.js"></script>
 </head>
 
 <body>
-  <div id="container">
+<!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/">upgrade your browser</a> or <a
+        href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your
+    experience.</p><![endif]-->
+
+<div class="container">
     <header>
-      <div id="header">
-        <img src="img/header_kontakt.jpg" width="760" height="130" title="" alt="" />
-      </div>
+        <img src="img/header_kontakt.jpg" width="760" height="130" title="" alt=""/>
     </header>
   
-    <div id="content" role="main">
-      <h1>E-Mail erfolgreich versendet</h1>
-      <p>Die E-Mail wurde erfolgreich versendet.</p>
+    <div class="content" role="main">
+        <h1>E-Mail erfolgreich versendet</h1>
+        <p>Die E-Mail wurde erfolgreich versendet.</p>
   
-      <p>Vielen Dank f&uuml;r Ihre Anfrage, wir werden uns umgehend mit Ihnen in Verbindung setzen!</p>
+        <p>Vielen Dank f&uuml;r Ihre Anfrage, wir werden uns umgehend mit Ihnen in Verbindung setzen!</p>
   
-      <p>
-        <a href="kontakt.html">zur&uuml;ck</a>
-      </p>
+        <p><a href="kontakt.html">zur&uuml;ck</a></p>
     </div>
-  
-    <footer>
-      <nav>
-        <ul id="navigation">
-          <li><a href="index.html">&ouml;kohof</a></li>
-          <li><a href="wohnungen.html">wohnungen</a></li>
-          <li><a href="galerie.html">galerie</a></li>
-          <li><a href="freizeit.html">freizeit</a></li>
-          <li><a href="demeter.html">demeter</a></li>
-          <li><a href="anfahrt.html">anfahrt</a></li>
-          <li id="selected">kontakt</li>
-          <li><a href="impressum.html">impressum</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.0.min.js"><\/script>')</script>
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  <!-- end scripts-->
-  <script>
-    var _gaq=[['_setAccount','UA-383464-1'],['_trackPageview'],['_trackPageLoadTime']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-  <!--[if lt IE 7 ]>
-    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+    <footer>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">&ouml;kohof</a></li>
+                <li><a href="wohnungen.html">wohnungen</a></li>
+                <li><a href="galerie.html">galerie</a></li>
+                <li><a href="freizeit.html">freizeit</a></li>
+                <li><a href="demeter.html">demeter</a></li>
+                <li><a href="anfahrt.html">anfahrt</a></li>
+                <li class="selected">kontakt</li>
+                <li><a href="impressum.html">impressum</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+
+<!-- JQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+
+<!-- Google Analytics -->
+<script>
+    var _gaq = [
+        ['_setAccount', 'UA-383464-1'],
+        ['_trackPageview']
+    ];
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = '//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+</script>
 </body>
 </html>

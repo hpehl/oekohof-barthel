@@ -123,16 +123,12 @@ a:focus {
     min-height: 400px;
 }
 
-.w560 {
-    width: 560px;
-}
-
 .content h1 {
-    font-size: 14pt;
+    font-size: 16pt;
 }
 
 .content h2 {
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 .content h1, .content h2, .content p {
@@ -185,39 +181,41 @@ a:focus {
     height: 60px;
 } 
 
-.content form ol {
+form ol {
     margin: 0;
     padding: 0 10px 10px;
     list-style: none
 }
 
-.content form li {
+form li {
     margin: 0;
     padding: 0;
 }
 
-.content form label {
+form label {
     display: inline-block;
     line-height: 1.8;
     vertical-align: top;
 }
 
-.content form label:first-child {
+form label:first-child {
     width: 120px;
 }
 
-.content legend {
+legend {
     margin: 0;
     padding: 0 10px 10px;
     font-weight: bold;
 }
 
-.content input[type="radio"] {
+input[type="radio"] {
     margin-top: 5px;
 }
 
-.content input[type="text"], .content input[type="date"], .content textarea {
-    line-height: 16px;
+input[type="text"], input[type="date"], input[type="number"], input[type="email"] {
+    height: 1.5em;    
+}
+input[type="text"], input[type="date"], input[type="number"], input[type="email"], textarea {
     margin: 0 5px 5px 0;
     padding: 3px 5px;
     border: #ddf solid 1px;
@@ -225,12 +223,12 @@ a:focus {
     width: 66%;
 }
 
-.content input[type="text"]:focus, .content input[type="date"]:focus, .content textarea:focus {
+input[type="text"]:focus, input[type="date"]:focus, input[type="number"]:focus, input[type="email"]:focus, textarea:focus {
     box-shadow: 0 0px 3px rgba(102, 102, 255, 1);
     background-color: #eef;
 }
 
-.content input[type="submit"] {
+input[type="submit"] {
     color: white;
     background-color: #006;
     font-weight: bold;
@@ -242,7 +240,7 @@ a:focus {
     box-shadow: 2px 2px 2px #003;
 }
 
-.content input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #003;
     box-shadow: 2px 2px 4px #006;
 }
@@ -250,10 +248,6 @@ a:focus {
 aside {
     background-color: #f93;
     float: right;
-}
-
-.w200 {
-    width: 200px;
 }
 
 aside p {

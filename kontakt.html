@@ -1,50 +1,45 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="de"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
 <head>
+    <title>&Ouml;kohof Familie Barthel | Kontakt</title>
+
     <meta charset="utf-8">
+    <meta name="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Harald Pehl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>&Ouml;kohof Familie Barthel | Kontakt</title>
-    <meta http-equiv="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach"/>
-    <meta name="author" content="Harald Pehl">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.16.custom.css"/>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
-    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    <script src="js/vendor/modernizr-2.6.2-custom.js"></script>
+    <script src="js/vendor/date-de-DE.js"></script>
 </head>
 
 <body>
-<div id="container">
+<!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/">upgrade your browser</a> or <a
+        href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your
+    experience.</p><![endif]-->
+
+<div class="container">
     <header>
-        <div id="header">
-            <img src="img/header_kontakt.jpg" width="760" height="130" title="" alt=""/>
-        </div>
+        <img src="img/header_kontakt.jpg" width="760" height="130" title="" alt=""/>
     </header>
 
-    <aside>
-        <div id="aside">
-            <p>Nat&uuml;rlich k&ouml;nnen Sie uns auch ganz normal per Telefon und Post erreichen.</p>
+    <aside style="width: 200px">
+        <p>Nat&uuml;rlich k&ouml;nnen Sie uns auch ganz normal per Telefon und Post erreichen.</p>
 
-            <p>
-                <strong>Hier unsere Adresse:</strong><br/> Fam. Barthel<br/> Linden 27<br/> 91635 Windelsbach<br/> Tel:
-                09861-6470<br/>
-                Email: barthel.linden@t-online.de
-            </p>
-        </div>
+        <p><strong>Hier unsere Adresse:</strong><br/> Fam. Barthel<br/> Linden 13<br/> 91635 Windelsbach<br/></p>
+        <p>Tel: 09861-6470</p>
+        <p>Email:<br/>barthel.linden@t-online.de</p>
     </aside>
 
-    <div id="content" role="main">
+    <div class="content" role="main" style="width: 560px">
         <h1>An wen k&ouml;nnen wir uns wenden?</h1>
         <p>Hier k&ouml;nnen Sie Kontakt mit uns aufnehmen, falls Sie eine Wohnung auf unserem &Ouml;kohof reservieren
             wollen oder uns sonst eine Nachricht senden wollen.</p>
@@ -52,36 +47,42 @@
         <p>Wir werden uns umgehend bei Ihnen melden, ob die Wohnung in dem von Ihnen angegebenen Zeitraum noch
             verf&uuml;gbar ist.</p>
 
-        <form id="emf-form" enctype="multipart/form-data" method="post"
-              action="http://www.emailmeform.com/builder/form/b3fds6A090Wi122ekcx" name="emf-form">
+        <form id="emf-form" enctype="multipart/form-data" method="post" 
+              action="#" name="emf-form">
             <input name="element_counts" value="11" type="hidden"/> <input name="embed" value="forms" type="hidden"/>
             <fieldset>
                 <ol>
-                    <li><label for="element_0">Name</label> <input type="text" id="element_0" name="element_0"
-                                                                   autofocus="autofocus"/></li>
+                    <li>
+                        <label for="element_0">Name<sup>*</sup></label> 
+                        <input type="text" id="element_0" name="element_0" required autofocus="autofocus"/>
+                    </li>
                     <li><label for="element_1">Strasse</label> <input type="text" id="element_1" name="element_1"/></li>
                     <li><label for="element_2">PLZ</label> <input type="text" id="element_2" name="element_2"/></li>
                     <li><label for="element_3">Stadt</label> <input type="text" id="element_3" name="element_3"/></li>
-                    <li><label for="element_4">E-Mail</label> <input type="text" id="element_4" name="element_4"/></li>
-                    <li><label for="element_5_0">Wohnung</label> <label for="element_5_0">I</label><input type="radio"
-                                                                                                          id="element_5_0"
-                                                                                                          name="element_5"
-                                                                                                          value="Wohung I"
-                                                                                                          class="mrgri"/><label
-                            for="element_5_1">II</label><input
-                            type="radio" id="element_5_1" name="element_5" value="Wohung II" class="mrgri"/><label
-                            for="element_5_2">III</label><input
-                            type="radio" id="element_5_2" name="element_5" value="Wohung III" class="mrgri"/><label
-                            for="element_5_3">keine
-                        Angabe</label><input type="radio" id="element_5_3" name="element_5" value="keine Angabe"
-                                             checked="checked"/></li>
-                    <li><label for="element_6">Erwachsene</label> <input type="text" id="element_6" name="element_6"/>
+                    <li><label for="element_4">E-Mail<sup>*</sup></label> <input type="email" id="element_4" name="element_4" required/></li>
+                    <li>
+                        <label for="element_5_0">Wohnung</label> 
+                        <label for="element_5_0">I</label>
+                        <input type="radio" id="element_5_0" name="element_5" value="Wohung I" class="mrgri"/>
+                        <label for="element_5_1">II</label>
+                        <input type="radio" id="element_5_1" name="element_5" value="Wohung II" class="mrgri"/>
+                        <label for="element_5_2">III</label>
+                        <input type="radio" id="element_5_2" name="element_5" value="Wohung III" class="mrgri"/>
+                        <label for="element_5_3">keine Angabe</label>
+                        <input type="radio" id="element_5_3" name="element_5" value="keine Angabe" checked="checked"/>
                     </li>
-                    <li><label for="element_7">Kinder</label> <input type="text" id="element_7" name="element_7"/></li>
-                    <li><label for="element_8">von</label> <input type="text" id="element_8" name="element_8"/></li>
-                    <li><label for="element_9">bis</label> <input type="text" id="element_9" name="element_9"/></li>
-                    <li><label for="element_10">Bemerkung</label> <textarea id="element_10" name="element_10"
-                                                                            rows="5"></textarea></li>
+                    <li><label for="element_6">Erwachsene</label> <input type="number" min="0" max="10" id="element_6" name="element_6"/></li>
+                    <li><label for="element_7">Kinder</label> <input type="number" min="0" max="10" id="element_7" name="element_7"/></li>
+                    <li>
+                        <label for="element_8">von<sup>*</sup></label> 
+                        <input type="date" id="element_8" name="element_8" required onchange="validateDates()"/>
+                    </li>
+                    <li>
+                        <label for="element_9">bis<sup>*</sup></label>
+                        <input type="date" id="element_9" name="element_9" required onchange="validateDates()"/>
+                    </li>
+                    <li><label for="element_10">Bemerkung</label> <textarea id="element_10" name="element_10" rows="5"></textarea></li>
+                    <li><small>Felder, die mit <sup>*</sup> markiert sind, bitte ausfüllen.</small></li>
                 </ol>
             </fieldset>
             <p>
@@ -92,14 +93,14 @@
 
     <footer>
         <nav>
-            <ul id="navigation">
+            <ul class="navigation">
                 <li><a href="index.html">&ouml;kohof</a></li>
                 <li><a href="wohnungen.html">wohnungen</a></li>
                 <li><a href="galerie.html">galerie</a></li>
                 <li><a href="freizeit.html">freizeit</a></li>
                 <li><a href="demeter.html">demeter</a></li>
                 <li><a href="anfahrt.html">anfahrt</a></li>
-                <li id="selected">kontakt</li>
+                <li class="selected">kontakt</li>
                 <li><a href="impressum.html">impressum</a></li>
             </ul>
         </nav>
@@ -114,12 +115,51 @@
 <!-- Webshim -->
 <script src="js-webshim/minified/polyfiller.js"></script>
 <script>
-    $.webshims.polyfill();
-    //$.webshims.polyfill('forms json-storage');
-
-    $(function () {
-        //use all implemented API-features on DOM-ready
+    $.webshims.polyfill("forms forms-ext json-storage");
+    $.webshims.setOptions("forms", {
+        addValidators: true
     });
+</script>
+
+<script>
+    function validateDates() {
+        var vonElem = document.getElementById("element_8");
+        var vonGiven = vonElem.value != null && vonElem.value != "";
+        var bisElem = document.getElementById("element_9");
+        var bisGiven = bisElem.value != null && bisElem.value != "";
+        
+        var valid = true;
+        vonElem.setCustomValidity("");
+        bisElem.setCustomValidity("");
+        
+        if (vonGiven) {
+            var von = Date.parse(vonElem.value).clearTime();
+            if (von.isBefore(Date.today())) {
+                valid = false;
+                vonElem.setCustomValidity("Das Datum darf nicht in der Vergangenheit liegen.");
+            }
+        }
+        
+        if (bisGiven) {
+            var bis = Date.parse(bisElem.value).clearTime();
+            if (bis.isBefore(Date.today())) {
+                valid = false;
+                bisElem.setCustomValidity("Das Datum darf nicht in der Vergangenheit liegen.");
+            }
+        }
+        
+        if (vonGiven && bisGiven && valid) {
+            if (von.isAfter(bis)) {
+                bisElem.setCustomValidity("Das Datum in 'von' (" + von.toString("dd.MM.yyyy") + ") darf nicht hinter dem Datum in 'bis' (" + bis.toString("dd.MM.yyyy") + ") liegen.");
+            }
+            else {
+                von.addDays(3);
+                if (von.isAfter(bis)) {
+                    bisElem.setCustomValidity("Bitte buchen Sie mindestens drei Übernachtungen.");
+                }
+            }
+        }
+    }
 </script>
 
 <!-- Google Analytics -->
