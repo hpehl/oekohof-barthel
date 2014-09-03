@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
 
     <script src="js/vendor/modernizr-2.6.2-custom.js"></script>
     <script src="js/vendor/date-de-DE.js"></script>
@@ -155,9 +155,9 @@
                 bisElem.setCustomValidity("Das Datum in 'von' (" + von.toString("dd.MM.yyyy") + ") darf nicht nach dem Datum in 'bis' (" + bis.toString("dd.MM.yyyy") + ") liegen.");
             }
             else {
-                von.addDays(3);
+                von.addDays(7);
                 if (von.isAfter(bis)) {
-                    bisElem.setCustomValidity("Bitte buchen Sie mindestens drei Übernachtungen.");
+                    bisElem.setCustomValidity("Bitte buchen Sie mindestens sieben Übernachtungen.");
                 }
             }
         }
