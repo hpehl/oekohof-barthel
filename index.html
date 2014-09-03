@@ -17,14 +17,11 @@
     <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
     <style type="text/css">
-        .wetterde_widget_classic_forecast .wetterde_widget_classic_forecast_color {
-            background-color: #ff9933;
-            color: #ffffff;
+        .wt-widget-searchbar {
+            display: none;
         }
-
-        .wetterde_widget_classic_forecast_title {
-            display: none !important;
-            visibility: hidden;
+        .wt-widget-backlink {
+            margin-left: 50%;
         }
     </style>
 
@@ -42,35 +39,25 @@
         <img src="img/header_home.jpg" width="760" height="130" title="" alt=""/>
     </header>
 
-    <aside style="width: 164px">
-        <div id="ww_51e56c7f5ef14" class="wetterde_widget_classic_forecast" style="background-color: #f93">
-            <div id="ww_51e56c7f5ef14_box"
-                 class="wetterde_widget_classic_forecast_box wetterde_widget_classic_forecast_column2" style="padding: 0 0 8px 0">
-                <div id="ww_51e56c7f5ef14_content" class="wetterde_widget_classic_forecast_content">
-                    <div class="wetterde_widget_classic_forecast_title">wetter.de Wetter-Widget</div>
-                    <div class="wetterde_widget_classic_forecast_loading">
-                        <div class="wetterde_widget_classic_forecast_loading_text">Wetterdaten werden geladen</div>
-                    </div>
-                </div>
-                <a id="ww_51e56c7f5ef14_link1"
-                   class="wetterde_widget_classic_forecast_link wetterde_widget_classic_forecast_color"
-                   href="http://www.wetter.de/deutschland/wetter-windelsbach-18227360.html" target="_blank">Wetter
-                    Windelsbach</a>
-                <a id="ww_51e56c7f5ef14_link2"
-                   class="wetterde_widget_classic_forecast_link_home wetterde_widget_classic_forecast_color"
-                   href="http://www.wetter.de" target="_blank"><img id="ww_51e56c7f5ef14_link_home_image"
-                                                                    src="http://bilder.static-fra.de/wetter11/css/widget/wetter/images/logo.gif"
-                                                                    width="120" height="28" alt="www.wetter.de"
-                                                                    title="www.wetter.de"/></a>
-            </div>
-            <div class="wetterde_widget_classic_forecast_column2 wetterde_widget_classic_border_off hidden">
-                <a id="ww_51e56c7f5ef14_link3" class="wetterde_widget_classic_forecast_link_create"
-                   href="http://www.wetter.de/tools/wetter-widget" target="_blank">&raquo; eigenes Widget erstellen</a>
-            </div>
+    <aside style="width: 310px">
+        <div id="64b26728e5ef563947a9ea517028e9cd">
+            <link rel="stylesheet" type="text/css" href="http://cdn.static-fra.de/lib/wt/widget/4.0.0/css/Classic.css">
+            <script type="text/javascript" src="http://cdn.static-fra.de/lib/wt/widget/4.0.0/js/Classic.min.js"></script>
+            <script type="text/javascript">
+                /* <![CDATA[ */
+                (function(){
+                    new WT.widget.Classic({
+                        id: '64b26728e5ef563947a9ea517028e9cd',
+                        locationId: '18227360'
+                    });
+                }());
+                /* ]]> */
+            </script>
+            <a id="64b26728e5ef563947a9ea517028e9cd-backlink" class="wt-widget-backlink" href="http://www.wetter.de/deutschland/wetter-windelsbach-18227360.html">Das Wetter in Windelsbach</a>
         </div>
     </aside>
 
-    <div class="content" style="width: 596px" role="main">
+    <div class="content" style="width: 450px" role="main">
         <h1>Was ist der &Ouml;kohof Barthel?</h1>
         <p>
             Lieber Gast,<br/> unser Hof liegt in <a target="external"
