@@ -155,10 +155,11 @@
                 bisElem.setCustomValidity("Das Datum in 'von' (" + von.toString("dd.MM.yyyy") + ") darf nicht nach dem Datum in 'bis' (" + bis.toString("dd.MM.yyyy") + ") liegen.");
             }
             else {
-                von.addDays(7);
+                // If the period is too short, Petra / Gerhard will calrify offline
+                /*von.addDays(7);
                 if (von.isAfter(bis)) {
                     bisElem.setCustomValidity("Bitte buchen Sie mindestens sieben Übernachtungen.");
-                }
+                }*/
             }
         }
     }
