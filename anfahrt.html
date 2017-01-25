@@ -1,29 +1,25 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang="de">
 <head>
-    <title>&Ouml;kohof Familie Barthel | Anfahrt</title>
-
     <meta charset="utf-8">
-    <meta name="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach">
-    <meta name="viewport" content="width=device-width">
-    <meta name="author" content="Harald Pehl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&Ouml;kohof Familie Barthel | Anfahrt</title>
+    <meta name="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Harald Pehl">
 
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
 
-    <script src="js/vendor/modernizr-2.6.2-custom.js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-
 <body>
-<!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a
-        href="http://browsehappy.com/">upgrade your browser</a> or <a
-        href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your
-    experience.</p><![endif]-->
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
 <div class="container">
     <header>
@@ -35,11 +31,9 @@
             <li><img src="img/karte.gif" width="350" height="477" alt="Naturpark Frankenh&ouml;he"
                      title="Naturpark Frankenh&ouml;he" border="0"/></li>
             <li style="text-align: right;">
-                <iframe width="350" height="360" frameborder="0" scrolling="no"
-                        marginheight="0" marginwidth="0"
-                        src="http://maps.google.com/maps?q=Linden+27,+91635+Windelsbach,+Deutschland&amp;hl=de&amp;sll=49.400362,10.26432&amp;sspn=0.122436,0.308647&amp;vpsrc=6&amp;hnear=Linden+27,+Linden+91635+Windelsbach,+Ansbach,+Bayern,+Deutschland&amp;t=m&amp;ie=UTF8&amp;hq=&amp;source=embed&amp;ll=49.476156,10.302429&amp;spn=0.321234,0.479279&amp;z=10&amp;output=embed&amp;iwloc=near"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d331515.22757867933!2d10.248184498291682!3d49.52297959174248!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47989a9fc07c0679%3A0xe3d60477755b2136!2s%C3%96kohof+Familie+Barthel!5e0!3m2!1sde!2sus!4v1485357898359" width="350" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
                 <br/>
-                <small><a target="external" href="https://www.google.com/maps?q=Fewo+Demeter-Bauernhof+Barthel&t=m&hq=Fewo+Demeter-Bauernhof+Barthel&z=10" style="color: #0000FF; text-align: left">Größere Kartenansicht</a></small>
+                <small><a target="external" href="https://goo.gl/maps/cEEAFXpkgzD2" style="color: #0000FF; text-align: left">Größere Kartenansicht</a></small>
             </li>
         </ul>
     </aside>
@@ -54,7 +48,7 @@
             berechnen lassen:</p>
 
         <form action="http://maps.google.com/maps" method="get" class="anfahrt" target="external">
-            <input type="hidden" name="daddr" value="Linden+27,+91635+Windelsbach,+Deutschland"/>
+            <input type="hidden" name="daddr" value="Ökohof+Familie+Barthel,+Linden+13,+91635+Windelsbach,+Deutschland"/>
             <input type="hidden" name="hl" value="de"/>
             <fieldset>
                 <legend>Start</legend>
@@ -94,15 +88,14 @@
     </footer>
 </div>
 
-<!-- JQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
 <!-- //-beg- concat_js -->
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <!-- //-end- concat_js -->
-
 <script>
     $(document).ready(function () {
         $('#saddr').keypress(function (e) {

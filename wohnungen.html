@@ -1,30 +1,27 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang="de">
 <head>
-    <title>&Ouml;kohof Familie Barthel | Wohnungen</title>
-
     <meta charset="utf-8">
-    <meta name="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach">
-    <meta name="viewport" content="width=device-width">
-    <meta name="author" content="Harald Pehl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&Ouml;kohof Familie Barthel | Wohnungen</title>
+    <meta name="description" content="Ferien auf dem Bauernhof bei Familie Barthel in Linden bei Windelsbach">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Harald Pehl">
 
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
 
-    <script src="js/vendor/modernizr-2.6.2-custom.js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-
 <body>
-<!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a
-        href="http://browsehappy.com/">upgrade your browser</a> or <a
-        href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your
-    experience.</p><![endif]-->
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
 <div class="container">
     <header>
@@ -39,6 +36,7 @@
         <p>Alle Wohnungen sind komplett m&ouml;biliert und mit Telefon und TV-Anschluss ausgestattet. Bettw&auml;sche
             und Handt&uuml;cher werden von uns gestellt. Eine Waschmaschine steht zur Verf&uuml;gung. Vermietung ab
             einer Woche m&ouml;glich.</p>
+        <p>Haustiere k&ouml;nnen leider nicht mitgebracxht werden.</p>
 
         <table class="wohnungen">
             <tr>
@@ -55,7 +53,8 @@
                         <li>Geschirrspüler</li>
                         <li>Schwedenofen</li>
                         <li>Terrasse</li>
-                        <li>Preis: 60 &euro; <span class="light">(bis 6 Personen, je weitere Person ab 3 Jahre 10 &euro;)</span></li>
+                        <li>Preis: 60 &euro; <span class="light">(bis 6 Personen, je weitere Person ab 3 Jahre 10 &euro;)</span>
+                        </li>
                     </ul>
                 </td>
                 <td>
@@ -91,7 +90,8 @@
                     <ul class="gallery">
                         <li><a rel="wohnung1" href="img/wohnungen/1/wohnraum.jpg" title="Wohnraum">
                             <img src="img/wohnungen/1/wohnraum_small.jpg"/></a></li>
-                        <li><a rel="wohnung1" href="img/wohnungen/1/schwedenofen.jpg" title="Schwedenofen" style="margin: 0 25px">
+                        <li><a rel="wohnung1" href="img/wohnungen/1/schwedenofen.jpg" title="Schwedenofen"
+                               style="margin: 0 25px">
                             <img src="img/wohnungen/1/schwedenofen_small.jpg"/></a></li>
                         <li><a rel="wohnung1" href="img/wohnungen/1/kueche.jpg" title="K&uuml;che">
                             <img src="img/wohnungen/1/kueche_small.jpg"/></a></li>
@@ -156,17 +156,16 @@
     </footer>
 </div>
 
-<!-- JQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="js/vendor/jquery.mousewheel-3.0.6.pack.js"></script>
-<script src="js/vendor/jquery.fancybox-2.1.5.pack.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/vendor/jquery.mousewheel-3.1.13.min.js"></script>
+<script src="js/vendor/jquery.fancybox-2.1.6.min.js"></script>
 <!-- //-beg- concat_js -->
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <!-- //-end- concat_js -->
-
 <script>
     $(document).ready(function () {
         $("a[rel='wohnung1']").fancybox({
