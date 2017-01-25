@@ -111,14 +111,7 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <!-- //-end- concat_js -->
-<!-- Webshim -->
-<script src="js-webshim/minified/polyfiller.js"></script>
 <script>
-    $.webshims.polyfill("forms forms-ext json-storage");
-    $.webshims.setOptions("forms", {
-        addValidators: true
-    });
-
     function validateDates() {
         var vonElem = document.getElementById("element_8");
         var vonGiven = vonElem.value != null && vonElem.value != "";
