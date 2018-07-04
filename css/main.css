@@ -93,18 +93,21 @@ a:focus {
 
 .content h1 {
     font-size: 16pt;
+    padding: 0 10px 5px;
 }
 
 .content h2 {
     font-size: 14pt;
+    padding: 10px 10px 5px;
 }
 
-.content h1, .content h2, .content p {
+.content h1, .content h2 {
     margin: 0;
-    padding: 0 10px 10px;
 }
 
 .content p {
+    margin: 0;
+    padding: 0 10px 10px;
     text-align: justify;
 }
 
