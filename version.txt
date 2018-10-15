@@ -1,6 +1,6 @@
 #Build information about oekohof-barthel.de
-#Wed, 18 Jul 2018 10:08:09 +0200
+#Mon, 15 Oct 2018 20:39:51 +0200
 #Version and build information about oekohof-barthel.de
 #Wed, 03 Sep 2014 17:55:10 +0200
-buildnumber=40
-builddate=18.07.2018 10\:08\:08
+buildnumber=41
+builddate=15.10.2018 20\:39\:51
