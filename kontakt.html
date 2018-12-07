@@ -88,26 +88,6 @@
                     <li>
                         <small>Felder, die mit <sup>*</sup> markiert sind, bitte ausfüllen.</small>
                     </li>
-                    <script type="text/javascript"
-                            src="//assets.emailmeform.com/cache/1544144400b6fbe3961eb21403307acf49423e00e4.js"
-                            charset="UTF-8"></script>
-                    <script type="text/javascript" charset="UTF-8">
-                        $(document).ready(function () {
-                            if (!EMF.Recaptcha.initialized()) {
-                                EMF.Recaptcha.init().then(function () {
-                                    recaptcha.widgetId = EMF.Recaptcha.render(
-                                        "recaptcha_placeholder",
-                                        true
-                                    );
-                                });
-                            } else {
-                                EMF.Recaptcha.reset();
-                            }
-                        });
-                    </script>
-                    <li id="emf-li-recaptcha" style="margin-top: 1em">
-                        <div id="recaptcha_placeholder" class="g-recaptcha"
-                             data-sitekey="6LdTUBgTAAAAAI3ypWnyeZindhUvdP9XgPeiAAs-" style="height: 78px"></div>
                 </ol>
             </fieldset>
             <p>
@@ -140,14 +120,12 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <!-- //-end- concat_js -->
-<!--
 <script src="https://www.google.com/recaptcha/api.js?render=6Le7WX8UAAAAAHGFa-dlndGAFM_yaeRkZeFwClcT&hl=de"></script>
 <script>
     grecaptcha.ready(function () {
         grecaptcha.execute('6Le7WX8UAAAAAHGFa-dlndGAFM_yaeRkZeFwClcT', {action: 'homepage'});
     });
 </script>
--->
 <script>
     function validateDates() {
         var vonElem = document.getElementById("element_8");
