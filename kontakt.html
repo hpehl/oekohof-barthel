@@ -19,7 +19,8 @@
 </head>
 <body>
 <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <div class="container">
@@ -43,21 +44,22 @@
         <p>Wir werden uns umgehend bei Ihnen melden, ob die Wohnung in dem von Ihnen angegebenen Zeitraum noch
             verf&uuml;gbar ist.</p>
 
-        <form id="emf-form" enctype="multipart/form-data" method="post" 
+        <form id="emf-form" enctype="multipart/form-data" method="post"
               action="https://www.emailmeform.com/builder/form/b3fds6A090Wi122ekcx" name="emf-form">
             <input name="element_counts" value="11" type="hidden"/> <input name="embed" value="forms" type="hidden"/>
             <fieldset>
                 <ol>
                     <li>
-                        <label for="element_0">Name<sup>*</sup></label> 
+                        <label for="element_0">Name<sup>*</sup></label>
                         <input type="text" id="element_0" name="element_0" required autofocus="autofocus"/>
                     </li>
                     <li><label for="element_1">Strasse</label> <input type="text" id="element_1" name="element_1"/></li>
                     <li><label for="element_2">PLZ</label> <input type="text" id="element_2" name="element_2"/></li>
                     <li><label for="element_3">Stadt</label> <input type="text" id="element_3" name="element_3"/></li>
-                    <li><label for="element_4">E-Mail<sup>*</sup></label> <input type="email" id="element_4" name="element_4" required/></li>
+                    <li><label for="element_4">E-Mail<sup>*</sup></label> <input type="email" id="element_4"
+                                                                                 name="element_4" required/></li>
                     <li>
-                        <label for="element_5_0">Wohnung</label> 
+                        <label for="element_5_0">Wohnung</label>
                         <label for="element_5_0">I</label>
                         <input type="radio" id="element_5_0" name="element_5" value="Wohung I" class="mrgri"/>
                         <label for="element_5_1">II</label>
@@ -67,18 +69,45 @@
                         <label for="element_5_3">keine Angabe</label>
                         <input type="radio" id="element_5_3" name="element_5" value="keine Angabe" checked="checked"/>
                     </li>
-                    <li><label for="element_6">Erwachsene</label> <input type="number" min="0" max="10" id="element_6" name="element_6"/></li>
-                    <li><label for="element_7">Kinder</label> <input type="number" min="0" max="10" id="element_7" name="element_7"/></li>
+                    <li><label for="element_6">Erwachsene</label> <input type="number" min="0" max="10" id="element_6"
+                                                                         name="element_6"/></li>
+                    <li><label for="element_7">Kinder</label> <input type="number" min="0" max="10" id="element_7"
+                                                                     name="element_7"/></li>
                     <li>
-                        <label for="element_8">von<sup>*</sup></label> 
+                        <label for="element_8">von<sup>*</sup></label>
                         <input type="date" id="element_8" name="element_8" required onchange="validateDates()"/>
                     </li>
                     <li>
                         <label for="element_9">bis<sup>*</sup></label>
                         <input type="date" id="element_9" name="element_9" required onchange="validateDates()"/>
                     </li>
-                    <li><label for="element_10">Bemerkung</label> <textarea id="element_10" name="element_10" rows="5"></textarea></li>
-                    <li><small>Felder, die mit <sup>*</sup> markiert sind, bitte ausfüllen.</small></li>
+                    <li><label for="element_10">Bemerkung</label> <textarea id="element_10" name="element_10"
+                                                                            rows="5"></textarea>
+                    </li>
+                    </li>
+                    <li>
+                        <small>Felder, die mit <sup>*</sup> markiert sind, bitte ausfüllen.</small>
+                    </li>
+                    <script type="text/javascript"
+                            src="//assets.emailmeform.com/cache/1544144400b6fbe3961eb21403307acf49423e00e4.js"
+                            charset="UTF-8"></script>
+                    <script type="text/javascript" charset="UTF-8">
+                        $(document).ready(function () {
+                            if (!EMF.Recaptcha.initialized()) {
+                                EMF.Recaptcha.init().then(function () {
+                                    recaptcha.widgetId = EMF.Recaptcha.render(
+                                        "recaptcha_placeholder",
+                                        true
+                                    );
+                                });
+                            } else {
+                                EMF.Recaptcha.reset();
+                            }
+                        });
+                    </script>
+                    <li id="emf-li-recaptcha" style="margin-top: 1em">
+                        <div id="recaptcha_placeholder" class="g-recaptcha"
+                             data-sitekey="6LdTUBgTAAAAAI3ypWnyeZindhUvdP9XgPeiAAs-" style="height: 78px"></div>
                 </ol>
             </fieldset>
             <p>
@@ -111,17 +140,25 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <!-- //-end- concat_js -->
+<!--
+<script src="https://www.google.com/recaptcha/api.js?render=6Le7WX8UAAAAAHGFa-dlndGAFM_yaeRkZeFwClcT&hl=de"></script>
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6Le7WX8UAAAAAHGFa-dlndGAFM_yaeRkZeFwClcT', {action: 'homepage'});
+    });
+</script>
+-->
 <script>
     function validateDates() {
         var vonElem = document.getElementById("element_8");
-        var vonGiven = vonElem.value != null && vonElem.value != "";
+        var vonGiven = vonElem.value != null && vonElem.value !== "";
         var bisElem = document.getElementById("element_9");
-        var bisGiven = bisElem.value != null && bisElem.value != "";
-        
+        var bisGiven = bisElem.value != null && bisElem.value !== "";
+
         var valid = true;
         vonElem.setCustomValidity("");
         bisElem.setCustomValidity("");
-        
+
         if (vonGiven) {
             var von = Date.parseExact(vonElem.value, "yyyy-MM-dd").clearTime();
             if (von.isBefore(Date.today())) {
@@ -129,7 +166,7 @@
                 vonElem.setCustomValidity("Das Datum darf nicht in der Vergangenheit liegen.");
             }
         }
-        
+
         if (bisGiven) {
             var bis = Date.parseExact(bisElem.value, "yyyy-MM-dd").clearTime();
             if (bis.isBefore(Date.today())) {
@@ -137,12 +174,11 @@
                 bisElem.setCustomValidity("Das Datum darf nicht in der Vergangenheit liegen.");
             }
         }
-        
+
         if (vonGiven && bisGiven && valid) {
             if (von.isAfter(bis)) {
                 bisElem.setCustomValidity("Das Datum in 'von' (" + von.toString("dd.MM.yyyy") + ") darf nicht nach dem Datum in 'bis' (" + bis.toString("dd.MM.yyyy") + ") liegen.");
-            }
-            else {
+            } else {
                 // If the period is too short, Petra / Gerhard will calrify offline
                 /*von.addDays(7);
                 if (von.isAfter(bis)) {
