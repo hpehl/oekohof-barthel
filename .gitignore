@@ -1,8 +1,9 @@
 *.iml
 .DS_Store
 .idea
+.parcel-cache
 backup
+dist
 incoming
-intermediate
-publish
+node_modules
 sftp.sh

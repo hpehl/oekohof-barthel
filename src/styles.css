@@ -1,0 +1,240 @@
+@import 'npm:normalize.css/normalize.css';
+@import 'npm:main.css/src/main.css';
+
+body, button, input, select, textarea {
+    font-family: "Ubuntu", sans-serif;
+    /*font-size: 10pt;*/
+    line-height: 1.4;
+    color: #222;
+}
+
+a {
+    color: #009;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #009;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+.container {
+    width: 760px;
+    margin: 10px auto;
+    color: white;
+    background-color: #f93;
+}
+
+.content {
+    min-height: 400px;
+}
+
+.content h1 {
+    font-size: 16pt;
+    padding: 0 10px 5px;
+}
+
+.content h2 {
+    font-size: 14pt;
+    padding: 10px 10px 5px;
+}
+
+.content h1, .content h2 {
+    margin: 0;
+}
+
+.content p {
+    margin: 0;
+    padding: 0 10px 10px;
+    text-align: justify;
+}
+
+.content ul {
+    margin: 0;
+    padding: 0 10px 10px 40px;
+}
+
+.mrgri {
+    margin-right: 1em;
+}
+
+.wohnungen td {
+    vertical-align: top;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery a {
+    margin: 5px 10px;
+}
+
+.gallery a:hover {
+    text-decoration: none;
+}
+
+.gallery img {
+    border: 1px solid transparent;
+}
+
+.gallery img:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 4px 2px white;
+}
+
+._80x45 img {
+    width: 80px;
+    height: 45px;
+}
+
+._80x60 img {
+    width: 80px;
+    height: 60px;
+}
+
+form ol {
+    margin: 0;
+    padding: 0 10px 10px;
+    list-style: none
+}
+
+form li {
+    margin: 0;
+    padding: 0;
+}
+
+form label {
+    display: inline-block;
+    line-height: 1.8;
+    vertical-align: top;
+}
+
+form label:first-child {
+    width: 120px;
+}
+
+legend {
+    margin: 0;
+    padding: 0 10px 10px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-top: 5px;
+}
+
+input[type="text"], input[type="date"], input[type="number"], input[type="email"] {
+    height: 1.5em;
+}
+input[type="text"], input[type="date"], input[type="number"], input[type="email"], textarea {
+    margin: 0 5px 5px 0;
+    padding: 3px 5px;
+    border: #ddf solid 1px;
+    border-radius: 2px;
+    width: 66%;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="number"]:focus, input[type="email"]:focus, textarea:focus {
+    box-shadow: 0 0 3px rgba(102, 102, 255, 1);
+    background-color: #eef;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #006;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #003;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #003;
+}
+
+input[type="submit"]:hover {
+    background-color: #003;
+    box-shadow: 2px 2px 4px #006;
+}
+
+aside {
+    background-color: #f93;
+    float: right;
+}
+
+aside p {
+    margin: 0;
+    padding: 0 10px 10px;
+    text-align: justify;
+}
+
+aside ul {
+    padding: 0 10px 0;
+    margin: 0;
+    list-style: none;
+}
+
+aside ul li {
+    padding: 0 0 10px;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.navigation {
+    font-size: 10pt;
+    clear: right;
+    color: #c60;
+    background-color: white;
+    padding-top: 10px;
+    list-style: none;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.navigation li.selected {
+    background-color: #f93;
+    color: white;
+    padding: 15px 15px 5px 15px;
+    border-bottom: 2px solid #c60;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navigation a {
+    padding: 15px 15px 5px 15px;
+}
+
+.navigation a, .navigation a:visited, .navigation a:focus {
+    color: #c60;
+}
+
+.navigation li:hover, .navigation a:hover {
+    background-color: #f93;
+    color: white;
+    border-bottom: 2px solid #c60;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navigation a:hover {
+    text-decoration: none;
+}
+
+.weather {
+    margin-right: 10px;
+}

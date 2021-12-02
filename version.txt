@@ -1,4 +1,0 @@
-#Build information about oekohof-barthel.de
-#Tue, 14 Jul 2020 20:02:53 +0200
-buildnumber=48
-builddate=14.07.2020 20\:02\:53
