@@ -1,4 +1,3 @@
-oekohof-barthel
-===============
+# Ökohof Barthel
 
-Hompage for www.oekohof-barthel.de
+Hompage for https://www.oekohof-barthel.de
