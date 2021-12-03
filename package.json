@@ -1,6 +1,11 @@
 {
   "name": "oekohof-barthel",
-  "description": "Homepage for Ökohof Barthel: https://www.oekohof-barthel.de/",
+  "version": "0.0.1",
+  "description": "Homepage for Ökohof Barthel",
+  "homepage": "https://www.oekohof-barthel.de/",
+  "license": "CC-BY-SA-4.0",
+  "author": "Harald Pehl <harald.pehl@gmail.com> (https://hpehl.info/)",
+  "repository": "github:hpehl/oekohof-barthel",
   "private": "true",
   "source": "src/index.html",
   "browserslist": [
@@ -12,9 +17,11 @@
   ],
   "scripts": {
     "dev": "parcel --open",
-    "prod": "parcel build"
+    "prebuild": "buildstamp --out.path=static/build.json --git --date.format=iso",
+    "build": "parcel build"
   },
   "devDependencies": {
+    "buildstamp": "^1.4.3",
     "parcel": "^2.0.1",
     "parcel-reporter-static-files-copy": "^1.3.4"
   },
