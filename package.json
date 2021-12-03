@@ -17,11 +17,10 @@
   ],
   "scripts": {
     "dev": "parcel --open",
-    "prebuild": "buildstamp --out.path=static/build.json --git --date.format=iso",
+    "prebuild": "./version.sh",
     "build": "parcel build"
   },
   "devDependencies": {
-    "buildstamp": "^1.4.3",
     "parcel": "^2.0.1",
     "parcel-reporter-static-files-copy": "^1.3.4"
   },

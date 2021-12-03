@@ -6,4 +6,3 @@ backup
 dist
 incoming
 node_modules
-sftp.sh
