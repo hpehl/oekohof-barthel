@@ -10,6 +10,7 @@ rm *.js
 rm *.json
 rm *.map
 rm *.png
+rm *.ttf
 rm *.txt
 lcd dist
 cd /img/gallery
@@ -29,4 +30,5 @@ mput *.js
 mput *.json
 mput *.map
 mput *.png
+mput *.ttf
 mput *.txt
