@@ -1,6 +1,62 @@
 @import 'npm:normalize.css/normalize.css';
 @import 'npm:main.css/src/main.css';
 
+@font-face {
+    src: url('font/Ubuntu-Light.ttf') format('truetype');
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    src: url('font/Ubuntu-LightItalic.ttf') format('truetype');
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    src: url('font/Ubuntu-Regular.ttf') format('truetype');
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url('font/Ubuntu-Italic.ttf') format('truetype');
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url('font/Ubuntu-Medium.ttf') format('truetype');
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    src: url('font/Ubuntu-MediumItalic.ttf') format('truetype');
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    src: url('font/Ubuntu-Bold.ttf') format('truetype');
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    src: url('font/Ubuntu-BoldItalic.ttf') format('truetype');
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 700;
+}
+
 body, button, input, select, textarea {
     font-family: "Ubuntu", sans-serif;
     /*font-size: 10pt;*/
