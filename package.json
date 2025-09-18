@@ -19,7 +19,7 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "^2.15.4",
+    "parcel": "^2.16.0",
     "parcel-reporter-static-files-copy": "^1.5.3"
   },
   "dependencies": {
