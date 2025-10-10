@@ -19,12 +19,12 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "^2.11.0",
+    "parcel": "^2.16.0",
     "parcel-reporter-static-files-copy": "^1.5.3"
   },
   "dependencies": {
     "main.css": "^3.0.0",
     "normalize.css": "^8.0.1",
-    "photoswipe": "^5.4.3"
+    "photoswipe": "^5.4.4"
   }
 }
